@@ -8,7 +8,13 @@ public class Interactive : MonoBehaviour
     private Ray _ray;
     private RaycastHit _hitRaycast;
     [SerializeField] private float _maxDistanceRay;
+    public List<GameObject> Cinemachine_cam;
 
+    void Start()
+    {
+        EnableCinemaCam(0);
+        
+    }
     private void Update()
     {
         Ray();
@@ -27,11 +33,24 @@ public class Interactive : MonoBehaviour
         if(Physics.Raycast(_ray, out _hitRaycast, _maxDistanceRay))
         {
             Debug.DrawRay(_ray.origin, _ray.direction *_maxDistanceRay, Color.blue);
+            
+            
+            if(_hitRaycast.collider.tag == "Chair")
+            {
+                EnableCinemaCam(1);
+            }
         }
         else if(_hitRaycast.transform == null)
         {
             Debug.DrawRay(_ray.origin, _ray.direction *_maxDistanceRay, Color.red);
         }
+    }
+
+    private void EnableCinemaCam(int k)
+    {
+        Cinemachine_cam.ForEach(i => i.SetActive(false));
+        Cinemachine_cam[k].SetActive(true);
+
     }
 
 }
