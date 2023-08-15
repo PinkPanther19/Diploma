@@ -19,6 +19,8 @@ namespace PixelCrushers.DialogueSystem
 
     public delegate void AssetLoadedDelegate(UnityEngine.Object asset);
 
+    
+
     /// <summary>
     /// This component ties together the elements of the Dialogue System: dialogue database, 
     /// dialogue UI, sequencer, and conversation controller. You will typically add this to a
@@ -28,11 +30,13 @@ namespace PixelCrushers.DialogueSystem
     [AddComponentMenu("")] // Use wrapper.
     public class DialogueSystemController : MonoBehaviour
     {
+        
 
         /// <summary>
         /// The initial dialogue database.
         /// </summary>
         [Tooltip("This dialogue database is loaded automatically. Use an Extra Databases component to load additional databases.")]
+        public bool isDialog = false;
         public DialogueDatabase initialDatabase = null;
 
         /// <summary>
@@ -947,6 +951,7 @@ namespace PixelCrushers.DialogueSystem
         /// </example>
         public void StartConversation(string title, Transform actor, Transform conversant, int initialDialogueEntryID)
         {
+            isDialog = true;
             if (warmupCoroutine != null)
             {
                 InterruptExtraWarmup();
@@ -1109,6 +1114,7 @@ namespace PixelCrushers.DialogueSystem
         /// </summary>
         public void StopConversation()
         {
+            isDialog = false;
             if (m_conversationController != null)
             {
                 m_conversationController.Close();

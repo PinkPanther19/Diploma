@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour
     private float mouseY;
 
     float xRotation = 0f;
+    public bool isCursor = false;
 
     [Header("Чувствительность мыши")]
     public float sensitivityMouse = 150f;
@@ -16,8 +17,9 @@ public class CameraController : MonoBehaviour
     public Transform Player;
     void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
-      //  Cursor.visible = false;
+       // Cursor.lockState = CursorLockMode.Locked;
+     // Cursor.visible = false;
+        CursorOFFON();
     }
 
     // Update is called once per frame
@@ -31,6 +33,16 @@ public class CameraController : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         Player.Rotate(Vector3.up * mouseX);
+        
       
+    }
+
+    public void CursorOFFON()
+    {
+      
+
+        Cursor.visible = isCursor;
+        
+
     }
 }

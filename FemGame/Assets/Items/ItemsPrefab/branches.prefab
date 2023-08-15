@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5329878190435316884}
   - component: {fileID: -6708291170682573430}
   - component: {fileID: 7698467709984843210}
+  - component: {fileID: 1534631016944982015}
   m_Layer: 0
   m_Name: branches
   m_TagString: Item
@@ -222,3 +223,22 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: 44e88d3e40af71f408ed7c3aed6ca1b2, type: 2}
+--- !u!114 &1534631016944982015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5329878190435316883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03526e258566dc247a4eb8525aeeb667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: 
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  m_mode: 1
+  m_destroyMode: 0
+  m_destroyedVersionPrefab: {fileID: 0}

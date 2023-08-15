@@ -21,17 +21,26 @@ public class Interactive : MonoBehaviour
     private string textInter = " "; 
     public Inventory inventory;
     public Item ItemName;
+    public bool isDialogue = false;
     //[SerializeField] private GameObject Player;
 
     void Start()
     {
         EnableCinemaCam(0);
         
+        
+    }
+    void Awake()
+    {
+       // EnableCinemaCam(2);
+       // StopPlayer();
+       // isSit = true;
     }
     private void Update()
     {
         Ray();
         DrawRay();
+        //isDialogue = GameObject.Find("Dialogue Manager (1)").GetComponent<DialogueSystemController>.isDialog;
     }
 
     private void Ray()
@@ -52,11 +61,11 @@ public class Interactive : MonoBehaviour
                 textInter = "Sit";
                 InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
             }
-            else if (_hitRaycast.collider.tag == "Item")
-            {
-                textInter = "Take";
-                InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
-            }
+            // else if (_hitRaycast.collider.tag == "Item")
+            // {
+            //     textInter = "Take";
+            //     InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
+            // }
 
 
 
@@ -65,15 +74,15 @@ public class Interactive : MonoBehaviour
                 //textInter = "[E]";
                 KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[LBM]";
             }
-            else if (_hitRaycast.collider.tag == "Item")
+           /* else if (_hitRaycast.collider.tag == "Item")
             {
                 KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[E]";
-            }
+            } */
 
 
 
 
-            if(_hitRaycast.collider.tag == "Item" && Input.GetKey(KeyCode.E)) 
+            if(_hitRaycast.collider.tag == "Item" && Input.GetKey(KeyCode.F)) //поднять предмет
             {
                 
                     inventory.startItems.Add(_hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO);
@@ -84,18 +93,11 @@ public class Interactive : MonoBehaviour
 
             
             
-            if(Input.GetMouseButton(0))
+            if(Input.GetMouseButton(0)) //ЛКМ
             {
                 if(_hitRaycast.collider.tag == "Chair" && isSit == false) //Сесть
                 {
-                Cinemachine_cam[1].transform.position = new Vector3(_hitRaycast.collider.transform.position.x, 0.89f,_hitRaycast.collider.transform.position.z);
-
-                rotat = _hitRaycast.collider.transform.eulerAngles.y;
-                CVC.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.Value = rotat;
-
-                EnableCinemaCam(1);
-                StopPlayer();
-                isSit = true;
+                    Sit();
 
                 }
                
@@ -113,11 +115,9 @@ public class Interactive : MonoBehaviour
 
         if(Input.GetMouseButton(1)) //отменяем действия 
         {
-            if(isSit == true)
+            if(isSit == true) //встать со стула
             {
-                EnableCinemaCam(0);
-                StartPlayer();
-                isSit = false;
+                funcSitOFF();
             }
         }
     }
@@ -135,6 +135,73 @@ public class Interactive : MonoBehaviour
     private void StartPlayer()
     {
         controller.enabled = true;
+    }
+
+    public void Sit()
+    {
+        Cinemachine_cam[1].transform.position = new Vector3(_hitRaycast.collider.transform.position.x, 0.74f,_hitRaycast.collider.transform.position.z);
+
+        rotat = _hitRaycast.collider.transform.eulerAngles.y;
+        CVC.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.Value = rotat;
+
+        EnableCinemaCam(1);
+        StopPlayer();
+        isSit = true;
+
+    }
+    public void funcSitOFF()
+    {
+        EnableCinemaCam(0);
+        StartPlayer();
+        isSit = false;
+    }
+
+    public void DialogON()
+    {
+        isDialogue = true;
+        EnableCinemaCam(2);
+        StopPlayer();
+    }
+
+    public void DialogOFF()
+    {
+        if(isSit == true)
+        {
+            EnableCinemaCam(1);
+        }
+        else
+        {
+            EnableCinemaCam(0);
+        }
+        StartPlayer();
+        isDialogue = false;
+    }
+    
+    public void StartCatScene()
+    {
+        
+        
+            EnableCinemaCam(3);
+            StopPlayer();
+        
+       
+    }
+
+    public void OnTriggerEnter(Collider other) {
+        if (other.gameObject.CompareTag("EndMap")) 
+        {
+            StopPlayer();
+            rotat = other.gameObject.collider.transform.eulerAngles.y;
+            CVC.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.Value = rotat;
+
+        }
+    }
+    public void OnTriggerExit(Collider other) {
+        if (other.gameObject.CompareTag("EndMap")) 
+        {
+            StartPlayer();
+            
+        }
     }
 
 }
