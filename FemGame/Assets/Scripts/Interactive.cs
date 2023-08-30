@@ -247,6 +247,7 @@ public class Interactive : MonoBehaviour
         }
         if(other.gameObject.CompareTag("Grass"))
         {
+            if(Grass_audio.isPlaying == false)
             Grass_audio.Play();
         }
     }
