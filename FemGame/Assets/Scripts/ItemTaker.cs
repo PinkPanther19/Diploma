@@ -7,6 +7,7 @@ public class ItemTaker : MonoBehaviour
    // [SerializeField] Item itemToAdd;
     [SerializeField] Inventory targetInventory;
     [SerializeField] Interactive interactiveS;
+    [SerializeField] GameObject knife;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,10 @@ public class ItemTaker : MonoBehaviour
         if(interactiveS.ItemName != null)
         {
             targetInventory.AddItem(interactiveS.ItemName);
+            if(interactiveS.ItemName.Name == "knife")
+            {
+                knife.SetActive(true);
+            }
             interactiveS.ItemName = null;
         }
         

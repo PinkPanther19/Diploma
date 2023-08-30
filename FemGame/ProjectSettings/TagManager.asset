@@ -9,6 +9,8 @@ TagManager:
   - Item
   - CatScene
   - EndMap
+  - Map
+  - Grass
   layers:
   - Default
   - TransparentFX

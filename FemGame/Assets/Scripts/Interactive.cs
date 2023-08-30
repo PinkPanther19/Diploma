@@ -5,6 +5,8 @@ using Cinemachine;
 
 public class Interactive : MonoBehaviour
 {
+    [SerializeField] public Player Player; //Это ссылка на скрипт PLayer
+    [SerializeField] public CameraController CameraController;
     [SerializeField] private Camera Player_Cam;
     private Ray _ray;
     private RaycastHit _hitRaycast;
@@ -15,6 +17,7 @@ public class Interactive : MonoBehaviour
     public bool isSit = false;
     private float rotat;
     public CinemachineVirtualCamera CVC;
+  
     
     public GameObject InteractiveText;
     public GameObject KeyText;
@@ -22,11 +25,26 @@ public class Interactive : MonoBehaviour
     public Inventory inventory;
     public Item ItemName;
     public bool isDialogue = false;
+
+    
+    private Vector3 moveDirection = Vector3.zero;
+    //private bool isMoving = true;
+    //private float distanceToTravel = 3f;
+    //private float currentDistance = 0f;
+    public float gravity = -9.81f;
+    public Transform Center;
+    public float rotationSpeed = 5f;
+    public bool nb = false;
+    private float movementSpeed = 1f; 
+    private float distanceThreshold;
+
+    public AudioSource Grass_audio;
     //[SerializeField] private GameObject Player;
 
     void Start()
     {
         EnableCinemaCam(0);
+        controller = GetComponent<CharacterController>();
         
         
     }
@@ -41,7 +59,28 @@ public class Interactive : MonoBehaviour
         Ray();
         DrawRay();
         //isDialogue = GameObject.Find("Dialogue Manager (1)").GetComponent<DialogueSystemController>.isDialog;
-    }
+
+        if(nb==true) //Если игрок ушел за карту, то он возвращается и идет в сторону стола
+        {
+             Vector3 direction = Center.position - transform.position;
+     
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0f, targetRotation.eulerAngles.y, 0f), rotationSpeed * Time.deltaTime);
+
+            float distance = Vector3.Distance(transform.position, Center.position);
+            if ((distanceThreshold - distance) < 4f)
+            {
+            transform.position += transform.forward * movementSpeed * Time.deltaTime;
+            }
+            else
+            {
+                StartPlayer();
+                nb=false;
+            }
+        }
+    }   
+        
+    
 
     private void Ray()
     {
@@ -82,14 +121,14 @@ public class Interactive : MonoBehaviour
 
 
 
-            if(_hitRaycast.collider.tag == "Item" && Input.GetKey(KeyCode.F)) //поднять предмет
-            {
+            // if(_hitRaycast.collider.tag == "Item" && Input.GetKey(KeyCode.F)) //поднять предмет
+            // {
                 
-                    inventory.startItems.Add(_hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO);
-                    ItemName = _hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO;
-                    Destroy(_hitRaycast.collider.gameObject);
+            //         inventory.startItems.Add(_hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO);
+            //         ItemName = _hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO;
+            //         //Destroy(_hitRaycast.collider.gameObject);
                
-            }
+            // }
 
             
             
@@ -130,11 +169,15 @@ public class Interactive : MonoBehaviour
     }
     private void StopPlayer()
     {
-        controller.enabled = false;
+        //controller.enabled = false;
+        Player.isMove = false;
+        CameraController.enabled = false;
     }
     private void StartPlayer()
     {
-        controller.enabled = true;
+        //controller.enabled = true;
+        Player.isMove = true;
+        CameraController.enabled = true;
     }
 
     public void Sit()
@@ -187,21 +230,34 @@ public class Interactive : MonoBehaviour
        
     }
 
-    public void OnTriggerEnter(Collider other) {
+    public void OnTriggerEnter(Collider other) 
+    {
         if (other.gameObject.CompareTag("EndMap")) 
         {
+            Debug.Log("Столкнулась");
             StopPlayer();
-            rotat = other.gameObject.collider.transform.eulerAngles.y;
-            CVC.GetCinemachineComponent<CinemachinePOV>().m_HorizontalAxis.Value = rotat;
-
+            nb = true;
+            distanceThreshold = Vector3.Distance(transform.position, Center.position);
+        }
+        if(other.gameObject.CompareTag("Map"))
+        {
+            Debug.Log("не Столкнулась");
+            StartPlayer();
+            nb=false;
+        }
+        if(other.gameObject.CompareTag("Grass"))
+        {
+            Grass_audio.Play();
         }
     }
-    public void OnTriggerExit(Collider other) {
-        if (other.gameObject.CompareTag("EndMap")) 
-        {
-            StartPlayer();
-            
-        }
+
+    public void AddItem ()
+    {
+        //inventory.startItems.Add(gameObject.GetComponent<Ite_so_Holder>().itemSO);
+        //ItemName = gameObject.GetComponent<Ite_so_Holder>().itemSO;
+        //Destroy(gameObject);
+        inventory.startItems.Add(_hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO);
+        ItemName = _hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO;
     }
 
 }
