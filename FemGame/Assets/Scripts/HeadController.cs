@@ -27,6 +27,14 @@ public class HeadController : MonoBehaviour
 
         if (animator)
         {
+            if(animator.GetCurrentAnimatorStateInfo(0).IsName("Collect"))
+            {
+                ikActive = false;
+            }
+            else
+            {
+                ikActive = true;
+            }
 
             if(ikActive)
             {

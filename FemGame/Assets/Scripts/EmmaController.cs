@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.AI;
-
+using Debug = System.Diagnostics.Debug;
 
 public class EmmaController : MonoBehaviour
 {
     protected Animator animEmma;
     public GameObject collederForWalk;
+    public Rigidbody RBEmma;
 
     NavMeshAgent agent;
     int i;
@@ -16,6 +18,9 @@ public class EmmaController : MonoBehaviour
     public bool isMove = true;
     public bool isCollectBool = false;
     public float timer = 0;
+    public float aRD; //удалить потом
+    public float aSD; //удалить потом
+
 
 
     // Start is called before the first frame update
@@ -23,8 +28,10 @@ public class EmmaController : MonoBehaviour
     {
         animEmma = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
-        agent.stoppingDistance = 0.1f;
+        RBEmma = GetComponent<Rigidbody>();
+        agent.stoppingDistance = 0.03f;
         TargetUpdate();
+        agent.enabled = false;
     }
 
     // Update is called once per frame
@@ -33,33 +40,85 @@ public class EmmaController : MonoBehaviour
         if(animEmma.GetCurrentAnimatorStateInfo(0).IsName("Collect") || animEmma.GetCurrentAnimatorStateInfo(0).IsName("Sit"))
         {
             collederForWalk.GetComponent<Collider>().enabled = false;
+            // agent.isStopped = false;
+            //RBEmma.velocity = new Vector3 (0,0,0);
+
         }
         else
         {
             collederForWalk.GetComponent<Collider>().enabled = true;
+            
+           // agent.isStopped=true;
         }
 
 
           // && (animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk") || animEmma.GetCurrentAnimatorStateInfo(0).IsName("Collect"))
         if (agent!= null && isCollectBool)
         {
+            agent.enabled = true;
+            //  aRD = agent.remainingDistance;
             //if (Mathf.Abs(agent.transform.position.z - agent.pathEndPosition.z) < 0.3 || Mathf.Abs(agent.transform.position.x - agent.pathEndPosition.x)  < 0.3)
-            if(agent.remainingDistance <= agent.stoppingDistance)   
+            if (agent.remainingDistance <= agent.stoppingDistance && !animEmma.GetCurrentAnimatorStateInfo(0).IsName("Sit"))   
             {
-                timer += Time.deltaTime;
                 animEmma.SetBool("isCollect", true);
+                timer += Time.deltaTime;
 
-                if (animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
+                
+                agent.SetDestination(gameObject.transform.position);
+                agent.updateRotation = false;
+                //animEmma.SetBool("isCollect", false);
+
+                if (animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk") && timer >= 2f)
                 {
                     animEmma.SetBool("isCollect", false);
+                    agent.updateRotation = true;
+                    timer = 0;
                     TargetUpdate();
                 }
+
+
+
+
+                //agent.SetDestination(gameObject.transform.position);
+                // agent.isStopped = false;
+                //agent.updateRotation = false;
+
+                // aRD = agent.remainingDistance;
+                // aSD = agent.stoppingDistance;
+
+                //if (animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk") && timer >= 2f)
+                //{
+
+                //    //  agent.updateRotation = true;
+                //  //  agent.isStopped = true;
+
+                //    animEmma.SetBool("isCollect", false);
+                //    timer = 0;
+                //    TargetUpdate();
+
+                //}
             }
+            else 
+            {
+                animEmma.SetBool("isCollect", false);
+            }
+            //else if(animEmma.GetCurrentAnimatorStateInfo(0).IsName("Collect"))
+            //{
+            //    agent.SetDestination(gameObject.transform.position);
+            //    agent.updateRotation = false;
+            //}
+            //else if (animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk") && timer >= 2f)
+            //{
+            //    animEmma.SetBool("isCollect", false);
+            //    agent.updateRotation = true;
+            //    timer = 0;
+            //    TargetUpdate();
+            //}
+
+            // aSD = agent.stoppingDistance;
 
 
-            
-            
-                agent.SetDestination(targets[i].position);
+            agent.SetDestination(targets[i].position);
             
                // Debug.Log("ƒолжна идти");
             
@@ -80,7 +139,7 @@ public class EmmaController : MonoBehaviour
     void TargetUpdate()
     {
         i = Random.Range(0, targets.Count);
-        timer = 0;
+        
     }
     
     public void isCollect()
@@ -90,4 +149,11 @@ public class EmmaController : MonoBehaviour
             
         
     }
+    //public void collectEnd(string message)
+    //{
+    //    if(message.Equals("collectEnd"))
+    //    {
+    //        aSD = 5555f;
+    //    }
+    //}
 }
