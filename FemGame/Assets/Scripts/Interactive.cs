@@ -15,6 +15,7 @@ public class Interactive : MonoBehaviour
     public List<GameObject> Cinemachine_cam;
     public CharacterController controller;
     public bool isSit = false;
+    public bool isRadio = false;
     private float rotat;
     public CinemachineVirtualCamera CVC;
   
@@ -39,11 +40,12 @@ public class Interactive : MonoBehaviour
     private float distanceThreshold;
 
     public AudioSource Grass_audio;
+    public int CamNumber;
     //[SerializeField] private GameObject Player;
 
     void Start()
     {
-        EnableCinemaCam(0);
+       // EnableCinemaCam(0);
         controller = GetComponent<CharacterController>();
         
         
@@ -91,11 +93,11 @@ public class Interactive : MonoBehaviour
 
     private void DrawRay()
     {
-        if(Physics.Raycast(_ray, out _hitRaycast, _maxDistanceRay)) //луч столкнулся
+        if (Physics.Raycast(_ray, out _hitRaycast, _maxDistanceRay)) //луч столкнулся
         {
-           // Debug.DrawRay(_ray.origin, _ray.direction *_maxDistanceRay, Color.blue);
-           
-            if(_hitRaycast.collider.tag == "Chair")
+            // Debug.DrawRay(_ray.origin, _ray.direction *_maxDistanceRay, Color.blue);
+
+            if (_hitRaycast.collider.tag == "Chair")
             {
                 textInter = "Sit";
                 InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
@@ -107,64 +109,90 @@ public class Interactive : MonoBehaviour
             // }
 
 
-
-            if(_hitRaycast.collider.tag == "Chair")
+            if (_hitRaycast.collider.tag == "Chair")
             {
                 //textInter = "[E]";
                 KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[LBM]";
             }
-           /* else if (_hitRaycast.collider.tag == "Item")
+            /* else if (_hitRaycast.collider.tag == "Item")
+             {
+                 KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[E]";
+             } */
+
+
+            if (_hitRaycast.collider.tag == "Radio")
             {
-                KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[E]";
-            } */
-
-
-
+                if(isRadio)
+                {
+                    KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[RBM]";
+                }
+                else
+                {
+                    KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[LBM]";
+                }
+                textInter = "Radio";
+                InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
+            }
 
             // if(_hitRaycast.collider.tag == "Item" && Input.GetKey(KeyCode.F)) //поднять предмет
             // {
-                
+
             //         inventory.startItems.Add(_hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO);
             //         ItemName = _hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO;
             //         //Destroy(_hitRaycast.collider.gameObject);
-               
+
             // }
 
-            
-            
-            if(Input.GetMouseButton(0)) //ЛКМ
+
+
+            if (Input.GetMouseButton(0)) //ЛКМ
             {
-                if(_hitRaycast.collider.tag == "Chair" && isSit == false) //Сесть
+                if (_hitRaycast.collider.tag == "Chair" && isSit == false) //Сесть
                 {
                     Sit();
 
                 }
-               
+                else if (_hitRaycast.collider.tag == "Radio" && !isRadio)
+                {
+                    _hitRaycast.collider.gameObject.GetComponent<AudioSource>().Play();
+                    isRadio = true;
+                }
+
+
             }
-            
-            
+
+            if (Input.GetMouseButton(1))
+            {
+                if (_hitRaycast.collider.tag == "Radio" && isRadio)
+                {
+                    _hitRaycast.collider.gameObject.GetComponent<AudioSource>().Pause();
+                    isRadio = false;
+                }
+            }
+
         }
-        else if(_hitRaycast.transform == null) //луч не столкнулся
+        else if (_hitRaycast.transform == null) //луч не столкнулся
         {
-          //  Debug.DrawRay(_ray.origin, _ray.direction *_maxDistanceRay, Color.red);
+            //  Debug.DrawRay(_ray.origin, _ray.direction *_maxDistanceRay, Color.red);
             textInter = "";
             InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
             KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "";
         }
 
-        if(Input.GetMouseButton(1)) //отменяем действия 
-        {
-            if(isSit == true) //встать со стула
+            if (Input.GetMouseButton(1) || Input.GetKey(KeyCode.Space)) //отменяем действия 
             {
-                funcSitOFF();
-            }
-        }
+                if (isSit == true) //встать со стула
+                {
+                    funcSitOFF();
+                }
+            }   
     }
 
     private void EnableCinemaCam(int k)
     {
         Cinemachine_cam.ForEach(i => i.SetActive(false));
         Cinemachine_cam[k].SetActive(true);
+        CamNumber = k;
 
     }
     private void StopPlayer()
@@ -202,7 +230,7 @@ public class Interactive : MonoBehaviour
     public void DialogON()
     {
         isDialogue = true;
-        EnableCinemaCam(2);
+        //EnableCinemaCam(2);
         StopPlayer();
     }
 
@@ -210,7 +238,7 @@ public class Interactive : MonoBehaviour
     {
         if(isSit == true)
         {
-            EnableCinemaCam(1);
+            CamOnEmma();
         }
         else
         {
@@ -261,4 +289,13 @@ public class Interactive : MonoBehaviour
         ItemName = _hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO;
     }
 
+    public void CamOnEmma()
+    {
+        EnableCinemaCam(4);
+    }
+    
+    public void idleCam()
+    {
+        EnableCinemaCam(0);
+    }
 }

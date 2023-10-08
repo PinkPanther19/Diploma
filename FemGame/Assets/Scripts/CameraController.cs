@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
     {
        // Cursor.lockState = CursorLockMode.Locked;
      // Cursor.visible = false;
-        CursorOFFON();
+        CursorOFF();
     }
 
     // Update is called once per frame
@@ -37,12 +37,16 @@ public class CameraController : MonoBehaviour
       
     }
 
-    public void CursorOFFON()
+    public void CursorON()
     {
       
 
-        Cursor.visible = isCursor;
+        Cursor.visible = true;
         
 
+    }
+    public void CursorOFF()
+    {
+        Cursor.visible = false;
     }
 }

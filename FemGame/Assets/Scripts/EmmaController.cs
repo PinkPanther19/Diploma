@@ -14,7 +14,7 @@ public class EmmaController : MonoBehaviour
 
     NavMeshAgent agent;
     int i = 1;
-    int k = 0;
+   
     public List<Transform> targets;
     public bool isMove = true;
     public bool isCollectBool = false;
@@ -23,7 +23,9 @@ public class EmmaController : MonoBehaviour
     public float aSD; //удалить потом
     public bool EmmaIsDialog = false;
     public float timer2 = 0;
-
+    public Transform Player;
+    public bool isCatScene = false;
+    public Transform TargetForEmma;
 
 
     // Start is called before the first frame update
@@ -57,7 +59,7 @@ public class EmmaController : MonoBehaviour
 
 
 
-        if (agent != null && isCollectBool && (animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk") || animEmma.GetCurrentAnimatorStateInfo(0).IsName("Collect")))
+        if (agent != null && isCollectBool && !isCatScene && (animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk") || animEmma.GetCurrentAnimatorStateInfo(0).IsName("Collect")))
         {
             print(agent.remainingDistance);
             agent.SetDestination(targets[i].position);
@@ -89,7 +91,24 @@ public class EmmaController : MonoBehaviour
             }
 
             agent.SetDestination(targets[i].position);
-        }  
+        }
+        else if(!isCollectBool && !isCatScene && (animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk") || animEmma.GetCurrentAnimatorStateInfo(0).IsName("Collect"))) //код сработает только 1 раз, т.к. в нем включится другая анимация
+        {
+            animEmma.SetBool("isCollect", false);
+            if(animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
+            {
+                agent.updateRotation = true;
+                agent.SetDestination(Player.position);
+                if (agent.remainingDistance <= agent.stoppingDistance)
+                {
+                    agent.SetDestination(gameObject.transform.position);
+                    animEmma.SetBool("isIdle", true);
+                    timer2 = 0f;
+                    TargetUpdate();
+                }
+            }
+           
+        }
 
     }
 
@@ -114,10 +133,33 @@ public class EmmaController : MonoBehaviour
         
     }
 
-    public void EmmaDialog()
+    public void EmmaDialogON()
     {
-        EmmaIsDialog = !EmmaIsDialog;
+        EmmaIsDialog = true;
+        isCollectBool = false;
     }
+    public void EmmaDialogOFF()
+    {
+        TargetUpdate();
+        EmmaIsDialog = false;
+        isCollectBool = true;
+        animEmma.SetBool("isIdle", false);
+    }
+
+    public void goToPlayerForCatScene()
+    {
+        animEmma.SetBool("isCollect", false);
+        isCollectBool = false;
+        isCatScene = true;
+        animEmma.SetBool("isIdle", true);
+        gameObject.transform.position = TargetForEmma.position;
+        
+        
+        gameObject.transform.rotation = TargetForEmma.rotation;
+        agent.SetDestination(gameObject.transform.position);
+
+    }
+
     //public void collectEnd(string message)
     //{
     //    if(message.Equals("collectEnd"))
