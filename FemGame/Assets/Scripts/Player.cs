@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
             //звук шагов и бега
             if((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S)) && (!Input.GetKey(KeyCode.LeftShift)) && isGrounded && transform.position!=p2)
             {
-                walk_sound.pitch = 1.9f;
+                walk_sound.pitch = 1.5f;
                 if(!walk_sound.isPlaying)
                 {
                     walk_sound.Play();
@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
             }
             else if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.S)) && (Input.GetKey(KeyCode.LeftShift)) && isGrounded && transform.position!=p2)
             {
-                walk_sound.pitch = 2.8f;
+                walk_sound.pitch = 2.4f;
                 if(!walk_sound.isPlaying)
                 {
                     walk_sound.Play();
