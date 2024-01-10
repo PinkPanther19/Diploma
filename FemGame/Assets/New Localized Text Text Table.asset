@@ -16,12 +16,22 @@ MonoBehaviour:
   - Ru
   - En
   m_languageValues: 0000000001000000
-  m_fieldKeys: 01000000
+  m_fieldKeys: 010000000300000004000000
   m_fieldValues:
   - m_fieldName: Emma
     m_keys: 0000000001000000
     m_values:
     - "\u042D\u043C\u043C\u0430"
     - Emma
+  - m_fieldName: branch
+    m_keys: 0100000000000000
+    m_values:
+    - firewood
+    - "\u0414\u0440\u043E\u0432\u0430"
+  - m_fieldName: "\u0414\u0430\u043B\u0435\u0435"
+    m_keys: 0000000001000000
+    m_values:
+    - "\u0414\u0430\u043B\u0435\u0435"
+    - Next
   m_nextLanguageID: 2
-  m_nextFieldID: 3
+  m_nextFieldID: 5

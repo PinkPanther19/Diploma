@@ -41,6 +41,10 @@ public class Interactive : MonoBehaviour
 
     public AudioSource Grass_audio;
     public int CamNumber;
+
+    private Outline outline;
+
+    private GameObject hitObject;
     //[SerializeField] private GameObject Player;
 
     void Start()
@@ -95,6 +99,7 @@ public class Interactive : MonoBehaviour
     {
         if (Physics.Raycast(_ray, out _hitRaycast, _maxDistanceRay)) //луч столкнулся
         {
+            hitObject = _hitRaycast.collider.gameObject;
             // Debug.DrawRay(_ray.origin, _ray.direction *_maxDistanceRay, Color.blue);
 
             if (_hitRaycast.collider.tag == "Chair")
@@ -133,6 +138,19 @@ public class Interactive : MonoBehaviour
                 textInter = "Radio";
                 InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
             }
+
+            if(_hitRaycast.collider.tag == "Branch")
+            {
+                hitObject = _hitRaycast.collider.gameObject;
+                outline = _hitRaycast.collider.gameObject.GetComponent<Outline>();
+                outline.enabled = true;
+
+            }
+            else
+            {
+                outline.enabled = false;
+            }
+            
 
             // if(_hitRaycast.collider.tag == "Item" && Input.GetKey(KeyCode.F)) //поднять предмет
             // {
@@ -177,6 +195,8 @@ public class Interactive : MonoBehaviour
             textInter = "";
             InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
             KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            outline.enabled = false;
+            
         }
 
             if (Input.GetMouseButton(1) || Input.GetKey(KeyCode.Space)) //отменяем действия 

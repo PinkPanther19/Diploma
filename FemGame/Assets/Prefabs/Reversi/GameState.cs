@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 public class GameState
 {
@@ -195,5 +196,16 @@ public class GameState
         }
 
         return legalMoves;
+    }
+
+    public GameState(GameState other)
+    {
+        Board = new PlayerReversi[Rows, Cols];
+        Array.Copy(other.Board, Board, Rows * Cols);
+        DiscCount = new Dictionary<PlayerReversi, int>(other.DiscCount);
+        CurrentPlayer = other.CurrentPlayer;
+        GameOver = other.GameOver;
+        Winner = other.Winner;
+        LegalMoves = new Dictionary<Position, List<Position>>(other.LegalMoves);
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - Map
   - Grass
   - Radio
+  - Branch
   layers:
   - Default
   - TransparentFX

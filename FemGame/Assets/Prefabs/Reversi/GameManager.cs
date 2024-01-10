@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     private Disc[,] discs = new Disc[8, 8];
     private List<GameObject> highlights = new List<GameObject>();
 
+  
+
 
 
     // Start is called before the first frame update
@@ -57,6 +59,7 @@ public class GameManager : MonoBehaviour
                 OnBoardClicked(boardPos);
             }
         }
+       
     }
 
     private void ShowLegalMoves()
