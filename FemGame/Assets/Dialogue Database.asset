@@ -593,7 +593,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28.684204
+        x: 27.023773
         y: 70
         width: 160
         height: 30
@@ -1085,6 +1085,14 @@ MonoBehaviour:
         value: '- I''ve gathered firewood'
         type: 4
         typeString: CustomFieldType_Localization
+      - title: Name ru
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: Name en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -1099,7 +1107,7 @@ MonoBehaviour:
         destinationDialogueID: 10
         isConnector: 0
         priority: 2
-      conditionsString: Variable["branches.NomCollected"] >= 12
+      conditionsString: CurrentQuestState("Find the branches") == "success"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1155,7 +1163,7 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: en
-        value: Cool! Will you bring a can of gasoline so I can light a fire?
+        value: Cool! Will you bring a canister of gasoline so I can light a fire?
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -1179,7 +1187,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: SetQuestState("Find the branches", "success")
+      userScript: SetQuestState("Find Emma", "success")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1227,6 +1235,14 @@ MonoBehaviour:
         value: Where's the canister?..
         type: 4
         typeString: CustomFieldType_Localization
+      - title: Name ru
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: Name en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -1241,14 +1257,14 @@ MonoBehaviour:
         destinationDialogueID: 12
         isConnector: 0
         priority: 2
-      conditionsString: CurrentQuestState("Find the branches") == "success"
+      conditionsString: CurrentQuestState("Find the canister") == "active"
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 390
+        x: 388.85355
         y: 71.21951
         width: 160
         height: 30
@@ -1359,6 +1375,14 @@ MonoBehaviour:
         value: '- No'
         type: 4
         typeString: CustomFieldType_Localization
+      - title: Name ru
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: Name en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -1424,6 +1448,14 @@ MonoBehaviour:
         value: It was a rhetorical question
         type: 4
         typeString: CustomFieldType_Localization
+      - title: Name ru
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: Name en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -1442,7 +1474,9 @@ MonoBehaviour:
       userScript: 'SetQuestState("Find the branches", "active");
 
         ShowAlert("Find
-        the firewood")'
+        the firewood");
+
+'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1634,6 +1668,14 @@ MonoBehaviour:
         value: Don't lose me
         type: 4
         typeString: CustomFieldType_Localization
+      - title: Name ru
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: Name en
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -1652,7 +1694,9 @@ MonoBehaviour:
       userScript: 'SetQuestState("Find the branches", "active");
 
         ShowAlert("Find
-        the firewood")'
+        the firewood");
+
+'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1698,6 +1742,14 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: en
         value: Of course
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: Name ru
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: Name en
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -1761,6 +1813,14 @@ MonoBehaviour:
         typeString: CustomFieldType_Localization
       - title: en
         value: Aren't there a lot of requests?
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: Name ru
+        value: 
+        type: 4
+        typeString: CustomFieldType_Localization
+      - title: Name en
+        value: 
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -1979,8 +2039,9 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: "SetQuestState(\"Find the canister\", \"active\");\nShowAlert(\"\u041D\u0430\u0439\u0442\u0438
-        \u043A\u0430\u043D\u0438\u0441\u0442\u0440\u0443\")"
+      userScript: 'SetQuestState("Find the canister", "active");
+
+'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1991,8 +2052,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 27.446655, y: 63.56076}
-    canvasZoom: 0.6922509
+    canvasScrollPosition: {x: 86.80131, y: 32.925327}
+    canvasZoom: 0.662251
   - id: 2
     fields:
     - title: Title
