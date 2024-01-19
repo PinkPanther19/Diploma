@@ -37,16 +37,17 @@ public class CameraController : MonoBehaviour
       
     }
 
-    public void CursorON()
-    {
+    //public void CursorON()
+    //{
       
 
-        Cursor.visible = true;
+    //    Cursor.visible = true;
         
 
-    }
+    //}
     public void CursorOFF()
     {
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

@@ -61,28 +61,28 @@ public class EmmaController : MonoBehaviour
 
         if (agent != null && isCollectBool && !isCatScene && (animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk") || animEmma.GetCurrentAnimatorStateInfo(0).IsName("Collect")))
         {
-            print(agent.remainingDistance);
+            //print(agent.remainingDistance);
             agent.SetDestination(targets[i].position);
             timer2 += Time.deltaTime;
             if ((agent.remainingDistance <= agent.stoppingDistance) && timer2>=1f)
             {
-                print(agent.remainingDistance);
+                //print(agent.remainingDistance);
                 animEmma.SetBool("isCollect", true);
                 timer += Time.deltaTime;
-                print(agent.remainingDistance);
+                //print(agent.remainingDistance);
 
                 agent.SetDestination(gameObject.transform.position);
                 agent.updateRotation = false;
-                print(agent.remainingDistance);
+                //print(agent.remainingDistance);
                 if (animEmma.GetCurrentAnimatorStateInfo(0).IsName("Walk") && timer >= 2f)
                 {
-                    print(agent.remainingDistance);
+                    //print(agent.remainingDistance);
                     animEmma.SetBool("isCollect", false);
                     agent.updateRotation = true;
                     timer = 0;
                     TargetUpdate();
                 }
-                print(agent.remainingDistance);
+                //print(agent.remainingDistance);
             }
             else
             {

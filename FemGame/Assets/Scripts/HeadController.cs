@@ -14,6 +14,8 @@ public class HeadController : MonoBehaviour
 
     public float lookWeightMin;
     public float Speedvalue;
+    //public float timer = 0f;
+    //public float max_timer = 10f;
 
     void Start()
     {
@@ -27,21 +29,21 @@ public class HeadController : MonoBehaviour
 
         if (animator)
         {
-            if(animator.GetCurrentAnimatorStateInfo(0).IsName("Collect"))
-            {
-                ikActive = false;
-            }
-            else
-            {
-                ikActive = true;
-            }
+            //if(animator.GetCurrentAnimatorStateInfo(0).IsName("Collect"))
+            //{
+            //    ikActive = false;
+            //}
+            //else
+            //{
+            //    ikActive = true;
+            //}
 
             if(ikActive)
-            {
+            { 
                 if(lookWeightMax-lookWeightMin>0.05f)
                 {
                     lookWeightMin = lookWeightMin + Speedvalue * Time.deltaTime;
-
+                    //Debug.Log("эээ");
                 }
 
                 if (lookObj != null)
@@ -50,10 +52,13 @@ public class HeadController : MonoBehaviour
                         animator.SetLookAtWeight(lookWeightMin);
                         animator.SetLookAtPosition(lookObj.position);
                     }
+                //timer = timer + timer * Time.deltaTime;
+                //Debug.Log("тру");
             }
             else
             {
-                if(lookWeightMin>0.05f)
+                //Debug.Log("работает элс");
+                if (lookWeightMin>0.05f)
                 {
                     lookWeightMin = lookWeightMin - Speedvalue * Time.deltaTime;
                     if (lookObj != null)
@@ -63,6 +68,14 @@ public class HeadController : MonoBehaviour
                         animator.SetLookAtPosition(lookObj.position);
                     }   
                 }
+
+                //if(timer>=max_timer)
+                //{
+                //    ikActive=false;
+                //    timer = 0;
+                //    Debug.Log("обнуление тайма");
+                //}
+
             }
         }
     }
@@ -77,7 +90,7 @@ public class HeadController : MonoBehaviour
         // ikActive = false;
     }
 
-    public void OnTriggerExit(Collider other)
+    public void OnTriggerExit(Collider other) //ну это не работает
     {
         if (other.gameObject.CompareTag("Player")) 
         {

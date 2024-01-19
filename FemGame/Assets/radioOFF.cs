@@ -6,6 +6,7 @@ public class radioOFF : MonoBehaviour
 {
     private bool isPlay = false;
     private AudioSource AudioRadio;
+    private bool isDialog = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +16,10 @@ public class radioOFF : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPlay && AudioRadio.isPlaying == true )
+        if (isDialog && AudioRadio.isPlaying == true)
         {
-            AudioRadio.volume -= 0.1f *  Time.deltaTime;
-            if(AudioRadio.volume  <= 0 )
+            AudioRadio.volume -= 0.1f * Time.deltaTime;
+            if (AudioRadio.volume <= 0)
             {
                 AudioRadio.Stop();
             }
@@ -27,6 +28,19 @@ public class radioOFF : MonoBehaviour
 
     public void OffRadio()
     {
-        isPlay = true;
+        isPlay = !isPlay;
+        if (isPlay)
+        {
+            AudioRadio.Play();
+        }
+        if (isPlay == false)
+        {
+            AudioRadio.Stop();
+        }
+    }
+
+    public void RadioRealOff()
+    {
+        isDialog = true;
     }
 }

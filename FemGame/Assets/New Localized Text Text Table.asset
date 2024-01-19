@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_languageKeys:
   - Ru
-  - En
+  - EN
   m_languageValues: 0000000001000000
-  m_fieldKeys: 010000000300000004000000
+  m_fieldKeys: 010000000300000004000000050000000600000007000000
   m_fieldValues:
   - m_fieldName: Emma
     m_keys: 0000000001000000
@@ -33,5 +33,20 @@ MonoBehaviour:
     m_values:
     - "\u0414\u0430\u043B\u0435\u0435"
     - Next
+  - m_fieldName: Firewood_trigger
+    m_keys: 0000000001000000
+    m_values:
+    - "\u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C \u0434\u0440\u043E\u0432\u0430"
+    - Put down the firewood
+  - m_fieldName: knife
+    m_keys: 0000000001000000
+    m_values:
+    - "\u041D\u043E\u0436"
+    - knife
+  - m_fieldName: Radio
+    m_keys: 0100000000000000
+    m_values:
+    - Radio
+    - "\u0420\u0430\u0434\u0438\u043E"
   m_nextLanguageID: 2
-  m_nextFieldID: 5
+  m_nextFieldID: 8

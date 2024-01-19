@@ -15,7 +15,7 @@ public class Interactive : MonoBehaviour
     public List<GameObject> Cinemachine_cam;
     public CharacterController controller;
     public bool isSit = false;
-    public bool isRadio = false;
+    //public bool isRadio = false;
     private float rotat;
     public CinemachineVirtualCamera CVC;
   
@@ -23,8 +23,8 @@ public class Interactive : MonoBehaviour
     public GameObject InteractiveText;
     public GameObject KeyText;
     private string textInter = " "; 
-    public Inventory inventory;
-    public Item ItemName;
+    //public Inventory inventory;
+    //public Item ItemName;
     public bool isDialogue = false;
 
     
@@ -125,19 +125,19 @@ public class Interactive : MonoBehaviour
              } */
 
 
-            if (_hitRaycast.collider.tag == "Radio")
-            {
-                if(isRadio)
-                {
-                    KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[RBM]";
-                }
-                else
-                {
-                    KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[LBM]";
-                }
-                textInter = "Radio";
-                InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
-            }
+            //if (_hitRaycast.collider.tag == "Radio")
+            //{
+            //    if(isRadio)
+            //    {
+            //        KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[RBM]";
+            //    }
+            //    else
+            //    {
+            //        KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "[LBM]";
+            //    }
+            //    textInter = "Radio";
+            //    InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
+            //}
 
             if(_hitRaycast.collider.tag == "Branch")
             {
@@ -148,7 +148,11 @@ public class Interactive : MonoBehaviour
             }
             else
             {
-                outline.enabled = false;
+                if(outline != null) 
+                {
+                    outline.enabled = false;
+                }
+                
             }
             
 
@@ -167,26 +171,28 @@ public class Interactive : MonoBehaviour
             {
                 if (_hitRaycast.collider.tag == "Chair" && isSit == false) //Сесть
                 {
+                 
                     Sit();
 
+
                 }
-                else if (_hitRaycast.collider.tag == "Radio" && !isRadio)
-                {
-                    _hitRaycast.collider.gameObject.GetComponent<AudioSource>().Play();
-                    isRadio = true;
-                }
+                //else if (_hitRaycast.collider.tag == "Radio" && !isRadio)
+                //{
+                //    _hitRaycast.collider.gameObject.GetComponent<AudioSource>().Play();
+                //    isRadio = true;
+                //}
 
 
             }
 
-            if (Input.GetMouseButton(1))
-            {
-                if (_hitRaycast.collider.tag == "Radio" && isRadio)
-                {
-                    _hitRaycast.collider.gameObject.GetComponent<AudioSource>().Pause();
-                    isRadio = false;
-                }
-            }
+            //if (Input.GetMouseButton(1))
+            //{
+            //    if (_hitRaycast.collider.tag == "Radio" && isRadio)
+            //    {
+            //        _hitRaycast.collider.gameObject.GetComponent<AudioSource>().Pause();
+            //        isRadio = false;
+            //    }
+            //}
 
         }
         else if (_hitRaycast.transform == null) //луч не столкнулся
@@ -195,8 +201,12 @@ public class Interactive : MonoBehaviour
             textInter = "";
             InteractiveText.GetComponent<TMPro.TextMeshProUGUI>().text = textInter;
             KeyText.GetComponent<TMPro.TextMeshProUGUI>().text = "";
-            outline.enabled = false;
             
+            if (outline != null) 
+            {
+                outline.enabled = false;
+            }
+
         }
 
             if (Input.GetMouseButton(1) || Input.GetKey(KeyCode.Space)) //отменяем действия 
@@ -300,14 +310,14 @@ public class Interactive : MonoBehaviour
         }
     }
 
-    public void AddItem ()
-    {
-        //inventory.startItems.Add(gameObject.GetComponent<Ite_so_Holder>().itemSO);
-        //ItemName = gameObject.GetComponent<Ite_so_Holder>().itemSO;
-        //Destroy(gameObject);
-        inventory.startItems.Add(_hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO);
-        ItemName = _hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO;
-    }
+    //public void AddItem ()
+    //{
+    //    //inventory.startItems.Add(gameObject.GetComponent<Ite_so_Holder>().itemSO);
+    //    //ItemName = gameObject.GetComponent<Ite_so_Holder>().itemSO;
+    //    //Destroy(gameObject);
+    //    inventory.startItems.Add(_hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO);
+    //    ItemName = _hitRaycast.collider.gameObject.GetComponent<Ite_so_Holder>().itemSO;
+    //}
 
     public void CamOnEmma()
     {
