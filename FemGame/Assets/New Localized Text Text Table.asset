@@ -16,7 +16,7 @@ MonoBehaviour:
   - Ru
   - EN
   m_languageValues: 0000000001000000
-  m_fieldKeys: 010000000300000004000000050000000600000007000000
+  m_fieldKeys: 01000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d000000
   m_fieldValues:
   - m_fieldName: Emma
     m_keys: 0000000001000000
@@ -48,5 +48,37 @@ MonoBehaviour:
     m_values:
     - Radio
     - "\u0420\u0430\u0434\u0438\u043E"
-  m_nextLanguageID: 2
-  m_nextFieldID: 8
+  - m_fieldName: (F to interact)
+    m_keys: 0000000001000000
+    m_values:
+    - "[F] \u0412\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C"
+    - '[F] to Interact'
+  - m_fieldName: '[F] I need a knife to cut it off'
+    m_keys: 0000000001000000
+    m_values:
+    - "[F] \u041C\u043D\u0435 \u043D\u0443\u0436\u0435\u043D \u043D\u043E\u0436,
+      \u0447\u0442\u043E\u0431\u044B \u043E\u0442\u0440\u0435\u0437\u0430\u0442\u044C
+      \u0435\u0433\u043E"
+    - '[F] I need a knife to cut it off'
+  - m_fieldName: Mushroom
+    m_keys: 0000000001000000
+    m_values:
+    - "\u0421\u0442\u0440\u0430\u043D\u043D\u044B\u0439 \u0433\u0440\u0438\u0431"
+    - A strange mushroom
+  - m_fieldName: + Mushroom
+    m_keys: 0000000001000000
+    m_values:
+    - "+1 \u0413\u0440\u0438\u0431"
+    - +1 Mushroom
+  - m_fieldName: Canned beans
+    m_keys: 0100000000000000
+    m_values:
+    - Canned beans
+    - "\u0411\u043E\u0431\u044B"
+  - m_fieldName: Canned fruits
+    m_keys: 0000000001000000
+    m_values:
+    - "\u0424\u0440\u0443\u043A\u0442\u044B"
+    - Canned fruits
+  m_nextLanguageID: 3
+  m_nextFieldID: 14

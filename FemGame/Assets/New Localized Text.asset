@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: New Localized Text
   m_EditorClassIdentifier: 
   languages:
-  - Ru
-  - En
+  - RU
+  - EN
   fields:
   - name: Emma
     values:

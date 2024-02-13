@@ -13,6 +13,7 @@ TagManager:
   - Grass
   - Radio
   - Branch
+  - Object
   layers:
   - Default
   - TransparentFX
