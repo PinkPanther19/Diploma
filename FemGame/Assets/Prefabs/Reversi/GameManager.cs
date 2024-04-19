@@ -2,9 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
+    public string StrPlayerColorRN;
+    [SerializeField]
+    public Vector3 impact;
+    [SerializeField]
+    public Ray rayGen;
+    [SerializeField]
+    public bool boolToGo;
+
     [SerializeField]
     private Camera cam;
 
@@ -47,18 +58,29 @@ public class GameManager : MonoBehaviour
         //{
         //    Application.Quit();
         //}
+        StrPlayerColorRN = gameState.CurrentPlayer.ToString();
 
-        if(Input.GetMouseButtonDown(0))
+        if (boolToGo == true)
         {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            Position boardPos = SceneToBoardPos(impact);
 
-            if(Physics.Raycast(ray, out RaycastHit hitInfo))
-            {
-                Vector3 impact = hitInfo.point;
-                Position boardPos = SceneToBoardPos(impact);
-                OnBoardClicked(boardPos);
-            }
+            
+            OnBoardClicked(boardPos);
+
+            boolToGo = false;
         }
+
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+
+        //    if(Physics.Raycast(ray, out RaycastHit hitInfo))
+        //    {
+        //        Vector3 impact = hitInfo.point;
+        //        Position boardPos = SceneToBoardPos(impact);
+        //        OnBoardClicked(boardPos);
+        //    }
+        //}
        
     }
 
@@ -80,8 +102,8 @@ public class GameManager : MonoBehaviour
 
     private void OnBoardClicked(Position boardPos)
     {
-     
-        if(gameState.MakeMove(boardPos, out MoveInfo moveInfo))
+
+        if (gameState.MakeMove(boardPos, out MoveInfo moveInfo))
         {
             StartCoroutine(OnMoveMade(moveInfo));
         }
@@ -89,15 +111,15 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator OnMoveMade(MoveInfo moveInfo)
     {
-      
+
         HideLegalMoves();
         yield return ShowMove(moveInfo);
         yield return ShowTurnOutcome(moveInfo);
         ShowLegalMoves();
-      
+
     }
 
-    
+
     private Position SceneToBoardPos(Vector3 scenePos)
     {
         int col = (int)(scenePos.x - 0.25f);
@@ -164,7 +186,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator ShowTurnOutcome(MoveInfo moveInfo)
     {
-        if(gameState.GameOver)
+        if (gameState.GameOver)
         {
             yield return ShowGameOver(gameState.Winner);
             yield break;
@@ -172,7 +194,7 @@ public class GameManager : MonoBehaviour
 
         PlayerReversi currentPlayer = gameState.CurrentPlayer;
 
-        if(currentPlayer == moveInfo.PlayerReversi)
+        if (currentPlayer == moveInfo.PlayerReversi)
         {
             yield return ShowTurnSkipped(currentPlayer.Opponent());
         }
@@ -187,11 +209,11 @@ public class GameManager : MonoBehaviour
         {
             PlayerReversi playerReversi = gameState.Board[pos.Row, pos.Col];
 
-            if(playerReversi == PlayerReversi.Black)
+            if (playerReversi == PlayerReversi.Black)
             {
                 black++;
                 uiManager.SetBlackScoreText(black);
-            }    
+            }
             else
             {
                 white++;

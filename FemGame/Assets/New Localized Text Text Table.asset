@@ -16,7 +16,7 @@ MonoBehaviour:
   - Ru
   - EN
   m_languageValues: 0000000001000000
-  m_fieldKeys: 01000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d000000
+  m_fieldKeys: 01000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000
   m_fieldValues:
   - m_fieldName: Emma
     m_keys: 0000000001000000
@@ -80,5 +80,17 @@ MonoBehaviour:
     m_values:
     - "\u0424\u0440\u0443\u043A\u0442\u044B"
     - Canned fruits
+  - m_fieldName: rb
+    m_keys: 0000000001000000
+    m_values:
+    - "\u0412\u0430\u0448\u0438 \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u044F
+      \u0441 \u042D\u043C\u043C\u043E\u0439 \u0443\u043B\u0443\u0447\u0448\u0438\u043B\u0438\u0441\u044C"
+    - Your relationship with Emma has improved!
+  - m_fieldName: rw
+    m_keys: 0000000001000000
+    m_values:
+    - "\u0412\u0430\u0448\u0438 \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u044F
+      \u0441 \u042D\u043C\u043C\u043E\u0439 \u0443\u0445\u0443\u0434\u0448\u0438\u043B\u0438\u0441\u044C"
+    - Your relationship with Emma has deteriorated!
   m_nextLanguageID: 3
-  m_nextFieldID: 14
+  m_nextFieldID: 16

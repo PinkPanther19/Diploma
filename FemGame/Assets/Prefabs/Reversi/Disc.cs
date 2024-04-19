@@ -12,12 +12,12 @@ public class Disc : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator> ();
+        animator = GetComponent<Animator>();
     }
 
     public void Flip()
     {
-        if(up == PlayerReversi.Black)
+        if (up == PlayerReversi.Black)
         {
             animator.Play("BlackToWhite");
             up = PlayerReversi.White;

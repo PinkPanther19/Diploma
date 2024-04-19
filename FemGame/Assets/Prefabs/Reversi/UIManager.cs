@@ -24,16 +24,16 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     private RectTransform playAgainButton;
 
-    
+
     // Start is called before the first frame update
 
     public void SetPlayerText(PlayerReversi currentPlayer)
     {
-        if(currentPlayer == PlayerReversi.Black)
+        if (currentPlayer == PlayerReversi.Black)
         {
             topText.text = "Очередь Чёрных <sprite name=DiscBlackUp>";
         }
-        else if(currentPlayer == PlayerReversi.White)
+        else if (currentPlayer == PlayerReversi.White)
         {
             topText.text = "Очередь Белых <sprite name=DiscWhiteUp>";
         }
@@ -41,11 +41,11 @@ public class UIManager : MonoBehaviour
 
     public void SetSkippedText(PlayerReversi skippedPlayer)
     {
-        if(skippedPlayer == PlayerReversi.Black)
+        if (skippedPlayer == PlayerReversi.Black)
         {
             topText.text = "Черным некуда сходить! <sprite name=DiscBlackUp>";
         }
-        else if(skippedPlayer == PlayerReversi.White)
+        else if (skippedPlayer == PlayerReversi.White)
         {
             topText.text = "Белым некуда сходить! <sprite name=DiscWhiteUp>";
         }
@@ -103,7 +103,7 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator HideOverlay()
     {
-        blackOverlay.rectTransform.LeanAlpha(0,1);
+        blackOverlay.rectTransform.LeanAlpha(0, 1);
         yield return new WaitForSeconds(1);
         blackOverlay.gameObject.SetActive(false);
     }
