@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -32,9 +33,21 @@ public class CameraController : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        Player.Rotate(Vector3.up * mouseX);
+        if(Player != null )
+        {
+            Player.Rotate(Vector3.up * mouseX);
+        }
         
-      
+
+        // Получаем информацию о сцене "Меню"
+        Scene menuScene = SceneManager.GetSceneByName("Menu");
+
+        // Проверяем, включена ли сцена "Меню"
+        if (menuScene.IsValid() && menuScene.isLoaded && !Cursor.visible)
+        {
+            CursorON();
+        }
+        
     }
 
     //public void CursorON()
@@ -49,5 +62,11 @@ public class CameraController : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void CursorON()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 }

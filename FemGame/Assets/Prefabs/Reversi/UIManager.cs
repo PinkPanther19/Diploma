@@ -31,11 +31,11 @@ public class UIManager : MonoBehaviour
     {
         if (currentPlayer == PlayerReversi.Black)
         {
-            topText.text = "Очередь Чёрных <sprite name=DiscBlackUp>";
+            topText.text = "Ваша очередь <sprite name=DiscBlackUp>";
         }
         else if (currentPlayer == PlayerReversi.White)
         {
-            topText.text = "Очередь Белых <sprite name=DiscWhiteUp>";
+            topText.text = "Очередь Эммы <sprite name=DiscWhiteUp>";
         }
     }
 
@@ -43,11 +43,11 @@ public class UIManager : MonoBehaviour
     {
         if (skippedPlayer == PlayerReversi.Black)
         {
-            topText.text = "Черным некуда сходить! <sprite name=DiscBlackUp>";
+            topText.text = "Вам некуда сходить! <sprite name=DiscBlackUp>";
         }
         else if (skippedPlayer == PlayerReversi.White)
         {
-            topText.text = "Белым некуда сходить! <sprite name=DiscWhiteUp>";
+            topText.text = "Эмме некуда сходить! <sprite name=DiscWhiteUp>";
         }
     }
 
@@ -120,10 +120,10 @@ public class UIManager : MonoBehaviour
         switch (winner)
         {
             case PlayerReversi.Black:
-                winnerText.text = "Черные победили!";
+                winnerText.text = "Вы победили!";
                 break;
             case PlayerReversi.White:
-                winnerText.text = "Белые победили!";
+                winnerText.text = "Эмма победила!";
                 break;
             case PlayerReversi.None:
                 winnerText.text = "Ничья!";

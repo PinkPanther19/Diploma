@@ -14,6 +14,8 @@ public class ImageFadeController : MonoBehaviour
 
     [SerializeField] private GameObject DialogManager_History;
     [SerializeField] private GameObject DialogManager_Emma;
+
+    public float delay = 4f;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,28 +30,39 @@ public class ImageFadeController : MonoBehaviour
 
     IEnumerator ShowPanelVIPCenter()
     {
-        float alpha = 1f;
-        while (imageVIPWarningPanel.color.a >0)
-        {
-            alpha -= stepForAlpha;
-            imageVIPWarningPanel.color = new Color(1f, 1f, 1f, alpha);
+        //float alpha = 1f;
+        //while (imageVIPWarningPanel.color.a > 0)
+        //{
+        //    alpha -= stepForAlpha * 0.1f;
+        //    imageVIPWarningPanel.color = new Color(1f, 1f, 1f, alpha);
 
-            yield return new WaitForSeconds(timeUpdateAlpha);
+        //    yield return new WaitForSeconds(timeUpdateAlpha);
 
 
-        }
+        //}
+       // new WaitForSeconds(4f);
 
-        if(imageVIPWarningPanel.color.a <= 0)
-        {
+        //if (imageVIPWarningPanel.color.a <= 0)
+        //{
             PanelUIImage.SetActive(false);
             DialogManager_History.SetActive(false);
             DialogManager_Emma.SetActive(true);
             yield return null;
-        }
+        //}
     }
 
     public void StartFadeImage()
     {
+        StartCoroutine(DelayedTransitionAndLoad());
+        //PanelUIImage.SetActive(false);
+        //DialogManager_History.SetActive(false);
+        //DialogManager_Emma.SetActive(true);
+    }
+
+    IEnumerator DelayedTransitionAndLoad()
+    {
+        yield return new WaitForSeconds(delay); // Задержка на 4 секунды
+
         StartCoroutine(ShowPanelVIPCenter());
     }
 }

@@ -142,4 +142,13 @@ public class Player : MonoBehaviour
             controller.Move(velocity * Time.deltaTime);
         }
     }
+
+    public void StopJump()
+    {
+        isGrounded = false;
+    }
+    public void StartJump()
+    {
+        isGrounded = true;
+    }
 }

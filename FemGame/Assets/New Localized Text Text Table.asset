@@ -16,7 +16,7 @@ MonoBehaviour:
   - Ru
   - EN
   m_languageValues: 0000000001000000
-  m_fieldKeys: 01000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000
+  m_fieldKeys: 01000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a000000
   m_fieldValues:
   - m_fieldName: Emma
     m_keys: 0000000001000000
@@ -92,5 +92,60 @@ MonoBehaviour:
     - "\u0412\u0430\u0448\u0438 \u043E\u0442\u043D\u043E\u0448\u0435\u043D\u0438\u044F
       \u0441 \u042D\u043C\u043C\u043E\u0439 \u0443\u0445\u0443\u0434\u0448\u0438\u043B\u0438\u0441\u044C"
     - Your relationship with Emma has deteriorated!
+  - m_fieldName: "\u041F\u0430\u043B\u0430\u0442\u043A\u0430"
+    m_keys: 0000000001000000
+    m_values:
+    - "\u041F\u0430\u043B\u0430\u0442\u043A\u0430"
+    - Tent
+  - m_fieldName: Backpack
+    m_keys: 0100000000000000
+    m_values:
+    - Backpack
+    - "\u0420\u044E\u043A\u0437\u0430\u043A"
+  - m_fieldName: Cassette
+    m_keys: 0000000001000000
+    m_values:
+    - "\u041A\u0430\u0441\u0441\u0435\u0442\u0430"
+    - Cassette
+  - m_fieldName: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E"
+    m_keys: 0000000001000000
+    m_values:
+    - "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043C\u0435\u043D\u044E"
+    - Main menu
+  - m_fieldName: "\u041D\u0430\u0447\u0430\u043B\u043E \u0438\u0433\u0440\u044B"
+    m_keys: 0100000000000000
+    m_values:
+    - Start game
+    - "\u041D\u0430\u0447\u0430\u043B\u043E \u0438\u0433\u0440\u044B"
+  - m_fieldName: "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+    m_keys: 0000000001000000
+    m_values:
+    - "\u041D\u0430\u0441\u0442\u0440\u043E\u0439\u043A\u0438"
+    - Settings
+  - m_fieldName: "\u0412\u044B\u0445\u043E\u0434"
+    m_keys: 0000000001000000
+    m_values:
+    - "\u0412\u044B\u0445\u043E\u0434"
+    - Exit
+  - m_fieldName: "\u041F\u043E\u043B\u043D\u044B\u0439 \u044D\u043A\u0440\u0430\u043D"
+    m_keys: 0100000000000000
+    m_values:
+    - Fullscreen
+    - "\u041F\u043E\u043B\u043D\u044B\u0439 \u044D\u043A\u0440\u0430\u043D"
+  - m_fieldName: "\u0420\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0435"
+    m_keys: 0000000001000000
+    m_values:
+    - "\u0420\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0435"
+    - Resolution
+  - m_fieldName: "\u0417\u0432\u0443\u043A"
+    m_keys: 0100000000000000
+    m_values:
+    - Sound
+    - "\u0417\u0432\u0443\u043A"
+  - m_fieldName: "\u042F\u0437\u044B\u043A"
+    m_keys: 0000000001000000
+    m_values:
+    - "\u042F\u0437\u044B\u043A"
+    - Language
   m_nextLanguageID: 3
-  m_nextFieldID: 16
+  m_nextFieldID: 27
