@@ -845,8 +845,8 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: Okay, I promise, next time I'll invite you to a normal vacation. You
-          know, there.. an overnight stay... or an amusement park.
+        value: Okay, I promise, next time I'll invite you on a normal vacation. You
+          know, like.. an overnight stay... or an amusement park.
         type: 4
         typeString: CustomFieldType_Localization
       - title: Name ru
@@ -1002,9 +1002,9 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: Yeah, it's a pity my mom doesn't think so. She was ready to cry even
+        value: Yeah, it's a shame my mom doesn't think so. She was ready to cry already
           when she realized that she would have to sleep in a sleeping bag, not in
-          a king-size bed.
+          a king size bed.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -1222,12 +1222,12 @@ MonoBehaviour:
         value: "3. \u042F \u0431\u044B \u0438 \u0441\u0430\u043C\u0430 \u043D\u0435
           \u043F\u0440\u043E\u0447\u044C \u043F\u0440\u0438\u0442\u0430\u0449\u0438\u0442\u044C
           \u043C\u0430\u0442\u0440\u0430\u0441 \u0432 \u043F\u0430\u043B\u0430\u0442\u043A\u0438!"
-        type: 0
-        typeString: CustomFieldType_Text
+        type: 4
+        typeString: CustomFieldType_Localization
       - title: EN
         value: 3. I wouldn't mind bringing a mattress to the tents myself!
-        type: 0
-        typeString: CustomFieldType_Text
+        type: 4
+        typeString: CustomFieldType_Localization
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -1808,8 +1808,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 392.59244
-        y: 943.4446
+        x: 399.2342
+        y: 945.105
         width: 160
         height: 30
     - id: 15
@@ -1843,7 +1843,7 @@ MonoBehaviour:
           \u044D\u0442\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u043E\u0431\u044B
           \u043C\u043E\u0439 \u043E\u0442\u0435\u0446 \u0441\u043D\u043E\u0432\u0430
           \u043D\u0435 \u043F\u043E\u0435\u0445\u0430\u043B \u043D\u0430 \u0440\u044B\u0431\u0430\u043B\u043A\u0443
-          \u0441 \u0434\u0440\u0443\u0437\u044C\u044F\u043C\u0438 \u0431\u0443\u0445\u0430\u0442\u044C"
+          \u0441 \u0434\u0440\u0443\u0437\u044C\u044F\u043C\u0438"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -1859,13 +1859,12 @@ MonoBehaviour:
           \u044D\u0442\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u043E\u0431\u044B
           \u043C\u043E\u0439 \u043E\u0442\u0435\u0446 \u0441\u043D\u043E\u0432\u0430
           \u043D\u0435 \u043F\u043E\u0435\u0445\u0430\u043B \u043D\u0430 \u0440\u044B\u0431\u0430\u043B\u043A\u0443
-          \u0441 \u0434\u0440\u0443\u0437\u044C\u044F\u043C\u0438 \u0431\u0443\u0445\u0430\u0442\u044C"
+          \u0441 \u0434\u0440\u0443\u0437\u044C\u044F\u043C\u0438"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
         value: Probably hiking with my parents is really too much.. I'm sure Mom
-          only suggested it so that my dad wouldn't go fishing with friends again
-          to drink
+          only suggested it so my dad wouldn't go fishing with friends again.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -1991,7 +1990,7 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: Don't lose me
+        value: Stay close
         type: 4
         typeString: CustomFieldType_Localization
       - title: Name ru
@@ -2061,11 +2060,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: "\u041A\u043E\u043D\u0435\u0447\u043D\u043E"
+        value: "- \u041A\u043E\u043D\u0435\u0447\u043D\u043E"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: Of course
+        value: '- Of course'
         type: 4
         typeString: CustomFieldType_Localization
       - title: Name ru
@@ -2132,11 +2131,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: "\u0410 \u043D\u0435 \u043C\u043D\u043E\u0433\u043E \u043B\u0438 \u043F\u0440\u043E\u0441\u044C\u0431?"
+        value: "- \u0410 \u043D\u0435 \u043C\u043D\u043E\u0433\u043E \u043B\u0438
+          \u043F\u0440\u043E\u0441\u044C\u0431?"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: Aren't there a lot of requests?
+        value: '- Aren''t you asking too much?'
         type: 4
         typeString: CustomFieldType_Localization
       - title: Name ru
@@ -2273,11 +2273,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: "\u041B\u0430\u0434\u043D\u043E, \u044F \u043F\u043E\u0434\u0443\u043C\u0430\u044E"
+        value: "- \u041B\u0430\u0434\u043D\u043E, \u044F \u043F\u043E\u0434\u0443\u043C\u0430\u044E"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: Okay, I'll think about it
+        value: '- Okay, I''ll think about it'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -2374,8 +2374,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 738.66797
-        y: 682.119
+        x: 782.0075
+        y: 677.02026
         width: 160
         height: 30
     - id: 23
@@ -2482,7 +2482,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u041D\u0443 \u0434\u0430, \u0447\u0435\u0433\u043E \u044D\u0442\u043E
+        value: "- \u041D\u0443 \u0434\u0430, \u0447\u0435\u0433\u043E \u044D\u0442\u043E
           \u044F.."
         type: 0
         typeString: CustomFieldType_Text
@@ -2491,12 +2491,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: "\u041D\u0443 \u0434\u0430, \u0447\u0435\u0433\u043E \u044D\u0442\u043E
+        value: "- \u041D\u0443 \u0434\u0430, \u0447\u0435\u0433\u043E \u044D\u0442\u043E
           \u044F.."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: Well, yes, what am I doing..
+        value: '- Well, yes, what am I doing..'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -2550,7 +2550,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u0421\u0430\u043C\u0430\u044F \u0443\u043C\u043D\u0430\u044F?"
+        value: "- \u0421\u0430\u043C\u0430\u044F \u0443\u043C\u043D\u0430\u044F?"
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -2558,11 +2558,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: "\u0421\u0430\u043C\u0430\u044F \u0443\u043C\u043D\u0430\u044F?"
+        value: "- \u0421\u0430\u043C\u0430\u044F \u0443\u043C\u043D\u0430\u044F?"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: Are you the smartest?
+        value: '- Are you the smartest?'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -2695,7 +2695,7 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: Why aren't you collecting firewood?
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -2769,14 +2769,15 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: "\u0422\u044B \u0431\u044B \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u043D\u0435\u0435
+        value: "- \u0422\u044B \u0431\u044B \u043E\u0441\u0442\u043E\u0440\u043E\u0436\u043D\u0435\u0435
           \u0440\u0430\u0437\u0433\u043E\u0432\u0430\u0440\u0438\u0432\u0430\u043B\u0430
           \u0441 \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u043E\u043C, \u0443 \u043A\u043E\u0442\u043E\u0440\u043E\u0433\u043E
           \u043D\u043E\u0436 \u0432 \u0440\u0443\u043A\u0435"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- You should be more careful talking to a man with a knife in his
+          hand.'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -2835,11 +2836,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: "\u0410 \u0433\u0434\u0435 \u0442\u0432\u043E\u0439 \u043F\u0430\u043F\u0430?"
+        value: "- \u0410 \u0433\u0434\u0435 \u0442\u0432\u043E\u0439 \u043F\u0430\u043F\u0430?"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- Where''s your dad?'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -2898,11 +2899,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041E\u043D \u0443\u0448\u0451\u043B \u0440\u044B\u0431\u0430\u0447\u0438\u0442\u044C"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: He went fishing
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -2961,11 +2962,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0412\u043E\u0443..\u043F\u043E\u043B\u0435\u0433\u0447\u0435!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: Wow..take it easy!
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3030,11 +3031,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "- \u0414\u0430 \u043B\u0430\u0434\u043D\u043E, \u044F \u0448\u0443\u0447\u0443!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- Come on, I''m kidding!'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3093,11 +3094,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "- \u0411\u0443! \u0411\u043E\u0439\u0441\u044F \u043C\u0435\u043D\u044F"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- Boo! Be afraid of me'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3159,11 +3160,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041F\u0440\u043E\u043D\u0443\u043B\u0430\u0441\u044C?"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: Are you awake?
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3228,11 +3229,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "- \u0412\u0440\u043E\u0434\u0435 \u0442\u043E\u0433\u043E"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- Sort of'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3311,7 +3312,11 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: 'Next time I won''t let you sleep, I was bored the whole way. I can''t
+          talk to your parents,
+
+          dad is only interested in chanson, and
+          mom is always arguing with him.'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3376,7 +3381,7 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- Yes, I''m also sorry that he couldn''t go.'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3451,7 +3456,10 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: 'Don''t get upset, would it be more interesting for you to spend time
+          with boring adults
+
+          than with your best friend?'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3524,7 +3532,7 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- Boring adults? Are you talking about your parents?'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3587,7 +3595,7 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- Well, yes, I agree'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3672,7 +3680,9 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: "I wish my father would take care of me the same way.,\n like your
+          dad does..It's a pity about his job, but never mind, I won't let you get
+          bored,\nwe'll have even more fun camping than usual"
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 1
@@ -3696,13 +3706,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 238.96289
-        y: 259.02887
+        x: 230.97586
+        y: 216.32431
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.602251
+    canvasScrollPosition: {x: 354.37585, y: 318.67343}
+    canvasZoom: 0.39225107
   - id: 2
     fields:
     - title: Title
@@ -10138,11 +10148,27 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041A\u043E\u0433\u0434\u0430 \u043C\u043D\u0435 \u0431\u044B\u043B\u043E
+          \u0432\u0441\u0435\u0433\u043E 5 \u043B\u0435\u0442, \u044F \u0441 \u0432\u043E\u0441\u0442\u043E\u0440\u0433\u043E\u043C
+          \u043C\u0430\u0445\u0430\u043B\u0430 \u0440\u0430\u043A\u0435\u0442\u043A\u043E\u0439,
+          \u0438\u0433\u0440\u0430\u044F \u0432 \u0431\u0430\u0434\u043C\u0438\u043D\u0442\u043E\u043D
+          \u0441\u043E \u0441\u0432\u043E\u0438\u043C \u043B\u044E\u0431\u0438\u043C\u044B\u043C
+          \u043F\u0430\u043F\u043E\u0439 \u043D\u0430 \u0443\u043B\u0438\u0446\u0435.
+          \u0412\u0435\u0447\u0435\u0440\u043D\u0435\u0435 \u0441\u043E\u043B\u043D\u0446\u0435
+          \u043E\u043A\u0443\u0442\u044B\u0432\u0430\u043B\u043E \u043D\u0430\u0441
+          \u0442\u0435\u043F\u043B\u043E\u043C, \u0430 \u043C\u0430\u043C\u0430,
+          \u0443\u043B\u044B\u0431\u0430\u044F\u0441\u044C, \u043D\u0430\u0431\u043B\u044E\u0434\u0430\u043B\u0430
+          \u0437\u0430 \u043D\u0430\u043C\u0438 \u0441 \u0432\u0435\u0440\u0430\u043D\u0434\u044B.
+          \u041F\u043E\u0434 \u0435\u0435 \u043D\u043E\u0433\u0430\u043C\u0438 \u0440\u0430\u0441\u043F\u0443\u0441\u043A\u0430\u043B\u0438\u0441\u044C
+          \u0446\u0432\u0435\u0442\u044B, \u0438 \u0438\u0445 \u0430\u0440\u043E\u043C\u0430\u0442
+          \u043D\u0430\u043F\u043E\u043B\u043D\u044F\u043B \u0432\u043E\u0437\u0434\u0443\u0445."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: When I was only 5 years old, I enthusiastically waved a racket while
+          playing badminton with my beloved dad on the street. The evening sun enveloped
+          us in warmth, and my mother, smiling, watched us from the veranda. Flowers
+          bloomed under her feet, and their fragrance filled the air.
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -10224,11 +10250,19 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041C\u044B \u0441 \u043C\u0430\u043C\u043E\u0439 \u0438 \u043F\u0430\u043F\u043E\u0439
+          \u0441\u043C\u0435\u044F\u043B\u0438\u0441\u044C \u0438 \u0440\u0430\u0434\u043E\u0432\u0430\u043B\u0438\u0441\u044C
+          \u043A\u0430\u0436\u0434\u043E\u043C\u0443 \u043C\u0433\u043D\u043E\u0432\u0435\u043D\u0438\u044E,
+          \u043F\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u043D\u043E\u043C\u0443
+          \u0432\u043C\u0435\u0441\u0442\u0435, \u0438 \u0434\u0430\u0436\u0435 \u043C\u043E\u044F
+          \u043F\u043B\u043E\u0445\u0430\u044F \u0438\u0433\u0440\u0430 \u0432 \u0431\u0430\u0434\u043C\u0438\u043D\u0442\u043E\u043D
+          \u043D\u0435 \u043C\u043E\u0433\u043B\u0430 \u044D\u0442\u043E\u0433\u043E
+          \u0438\u0441\u043F\u043E\u0440\u0442\u0438\u0442\u044C."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: Mom, my Dad and I laughed and enjoyed every moment we spent together,
+          and even my bad badminton game couldn't spoil it.
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -10307,11 +10341,31 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0418 \u0432\u043E\u0442 \u043D\u0430\u0441\u0442\u0443\u043F\u0438\u043B
+          \u043C\u043E\u0439 10-\u0439 \u0434\u0435\u043D\u044C \u0440\u043E\u0436\u0434\u0435\u043D\u0438\u044F.
+          \u041F\u043E\u0434\u0430\u0440\u043A\u043E\u0432 \u0431\u044B\u043B\u043E
+          \u043D\u0435 \u0442\u0430\u043A \u043C\u043D\u043E\u0433\u043E, \u043D\u043E
+          \u0441\u0430\u043C\u044B\u0439 \u0433\u043B\u0430\u0432\u043D\u044B\u0439
+          \u0438\u0437 \u043D\u0438\u0445 \u0431\u044B\u043B \u043F\u043B\u044E\u0448\u0435\u0432\u044B\u0439
+          \u0435\u043D\u043E\u0442 - \u0441\u0438\u043C\u0432\u043E\u043B \u043D\u0430\u0448\u0435\u0439
+          \u043E\u0431\u0449\u0435\u0439 \u043B\u044E\u0431\u0432\u0438 \u043A \u044D\u0442\u0438\u043C
+          \u043C\u0438\u043B\u044B\u043C \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F\u043C.
+          \n\n\u0421 \u0443\u0445\u0430 \u0435\u043D\u043E\u0442\u0430 \u043D\u0435\u0443\u043A\u043B\u044E\u0436\u0435
+          \u0441\u0432\u0438\u0441\u0430\u043B \u0440\u043E\u0437\u043E\u0432\u044B\u0439
+          \u0431\u0430\u043D\u0442. \u042F \u0441\u0440\u0430\u0437\u0443 \u043F\u043E\u043D\u044F\u043B\u0430,
+          \u0447\u0442\u043E \u0438\u0433\u0440\u0443\u0448\u043A\u0443 \u0432\u044B\u0431\u0438\u0440\u0430\u043B
+          \u043E\u0442\u0435\u0446, \u043F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E
+          \u043E\u043D \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u0443\u043C\u0435\u043B
+          \u043A\u0440\u0430\u0441\u0438\u0432\u043E \u0443\u043F\u0430\u043A\u043E\u0432\u044B\u0432\u0430\u0442\u044C
+          \u043F\u043E\u0434\u0430\u0440\u043A\u0438."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: "And now it's my 10th birthday. There were not many gifts, but the
+          most important of them was a plush raccoon - a symbol of our common love
+          for these lovely creatures. \n\nA pink bow hung awkwardly from the raccoon's
+          ear. I immediately realized that my father had chosen the toy because he
+          had never been able to pack gifts beautifully."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -10503,11 +10557,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041C\u0435\u043D\u044F \u0432\u0441\u0435\u0433\u0434\u0430 \u044D\u0442\u043E
+          \u0443\u043C\u0438\u043B\u044F\u043B\u043E."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: I've always been touched by it.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -10568,11 +10623,13 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u042F \u0432\u0441\u0435\u0433\u0434\u0430 \u0441\u043C\u0435\u044F\u043B\u0430\u0441\u044C
+          \u043D\u0430\u0434 \u043D\u0435\u0443\u043A\u043B\u044E\u0436\u0435\u0441\u0442\u044C\u044E
+          \u043F\u0430\u043F\u044B."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: I always laughed at Dad's clumsiness.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -10623,7 +10680,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "\u0412\u043E\u0437\u0434\u0443\u0448\u043D\u044B\u0435 \u0441\u043B\u0438\u0432\u043A\u0438
+        value: "\u0412\u0437\u0431\u0438\u0442\u044B\u0435 \u0441\u043B\u0438\u0432\u043A\u0438
           \u043D\u0430 \u0442\u043E\u0440\u0442\u0435 \u043F\u0430\u0447\u043A\u0430\u043B\u0438
           \u043C\u043E\u0439 \u043D\u043E\u0441. \u041C\u0430\u043C\u0430 \u043F\u0435\u043A\u043B\u0430
           \u0435\u0433\u043E \u0442\u0430\u0439\u043A\u043E\u043C, \u0447\u0442\u043E\u0431\u044B
@@ -10648,11 +10705,35 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0412\u0437\u0431\u0438\u0442\u044B\u0435 \u0441\u043B\u0438\u0432\u043A\u0438
+          \u043D\u0430 \u0442\u043E\u0440\u0442\u0435 \u043F\u0430\u0447\u043A\u0430\u043B\u0438
+          \u043C\u043E\u0439 \u043D\u043E\u0441. \u041C\u0430\u043C\u0430 \u043F\u0435\u043A\u043B\u0430
+          \u0435\u0433\u043E \u0442\u0430\u0439\u043A\u043E\u043C, \u0447\u0442\u043E\u0431\u044B
+          \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u044D\u0442\u043E\u0442 \u0434\u0435\u043D\u044C
+          \u043E\u0441\u043E\u0431\u0435\u043D\u043D\u044B\u043C, \u0432 \u0442\u043E
+          \u0432\u0440\u0435\u043C\u044F \u043A\u0430\u043A \u043F\u0430\u043F\u0430
+          \u043E\u0442\u0432\u043B\u0435\u043A\u0430\u043B \u043C\u0435\u043D\u044F
+          \u043D\u0430 \u0437\u0430\u0434\u043D\u0435\u043C \u0434\u0432\u043E\u0440\u0435.\n\n\u042F
+          \u0437\u0430\u0434\u0443\u043B\u0430 \u0441\u0432\u0435\u0447\u0438 \u0438
+          \u043F\u043E\u0447\u0443\u0432\u0441\u0442\u0432\u043E\u0432\u0430\u043B\u0430,
+          \u0447\u0442\u043E \u043D\u0435\u0442 \u043D\u0438\u0447\u0435\u0433\u043E
+          \u0434\u043E\u0440\u043E\u0436\u0435 \u044D\u0442\u043E\u0433\u043E \u043E\u0434\u043D\u043E\u043E\u0431\u0440\u0430\u0437\u043D\u043E\u0433\u043E
+          \u0442\u0435\u0447\u0435\u043D\u0438\u044F \u0434\u043D\u0435\u0439, \u043A\u043E\u0433\u0434\u0430
+          \u0432\u0441\u0435 \u0432\u043E\u043A\u0440\u0443\u0433 \u0442\u0430\u043A\u043E\u0435
+          \u0440\u043E\u0434\u043D\u043E\u0435 \u0438 \u0442\u0435\u043F\u043B\u043E\u0435.
+          \u041C\u043E\u0438\u043C \u0437\u0430\u0433\u0430\u0434\u0430\u043D\u043D\u044B\u043C
+          \u0436\u0435\u043B\u0430\u043D\u0438\u0435\u043C \u0431\u044B\u043B\u043E.."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: 'The whipped cream on the cake stained my nose. Mom baked it secretly
+          to make the day special, while Dad distracted me in the backyard.
+
+
+          I
+          blew out the candles and felt that there is nothing more precious than
+          this monotonous flow of days when everything around is so familiar and
+          warm. My wish was..'
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -10721,11 +10802,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0447\u0442\u043E\u0431\u044B \u0435\u043D\u043E\u0442 \u043E\u0436\u0438\u043B!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: to make my raccoon come to life!
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -10788,11 +10869,15 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0447\u0442\u043E\u0431\u044B \u043A \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u043C\u0443
+          \u043C\u043E\u0435\u043C\u0443 \u0434\u043D\u044E \u0440\u043E\u0436\u0434\u0435\u043D\u0438\u044F
+          \u0443 \u043C\u0435\u043D\u044F \u0431\u044B\u043B\u043E \u0431\u043E\u043B\u044C\u0448\u0435
+          \u0434\u0440\u0443\u0437\u0435\u0439 \u0438 \u0431\u043E\u043B\u044C\u0448\u0435
+          \u043F\u043E\u0434\u0430\u0440\u043A\u043E\u0432!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: that by my next birthday I have more friends and more gifts!
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -10846,8 +10931,7 @@ MonoBehaviour:
         value: "\u042F \u0431\u0440\u043E\u0441\u0438\u043B\u0430\u0441\u044C \u043A
           \u043C\u0430\u043C\u0435, \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u0441\u0438\u0434\u0435\u043B\u0430
           \u043D\u0430 \u0441\u0442\u0443\u043B\u0435 \u0438 \u0441\u0436\u0438\u043C\u0430\u043B\u0430
-          \u0440\u0443\u043A\u0443 \u043F\u0430\u043F\u044B, \u0441\u043B\u0435\u0437\u044B
-          \u0442\u0435\u043A\u043B\u0438 \u043F\u043E \u0435\u0451 \u0449\u0435\u043A\u0430\u043C.
+          \u0440\u0443\u043A\u0443 \u043F\u0430\u043F\u044B \u0438 \u0440\u044B\u0434\u0430\u043B\u0430.
           \u042F \u043E\u0431\u043D\u044F\u043B\u0430 \u0435\u0451 \u0442\u0430\u043A
           \u043A\u0440\u0435\u043F\u043A\u043E, \u0441\u043B\u043E\u0432\u043D\u043E
           \u043F\u044B\u0442\u0430\u043B\u0430\u0441\u044C \u0437\u0430\u0449\u0438\u0442\u0438\u0442\u044C
@@ -10865,11 +10949,27 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u042F \u0431\u0440\u043E\u0441\u0438\u043B\u0430\u0441\u044C \u043A
+          \u043C\u0430\u043C\u0435, \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u0441\u0438\u0434\u0435\u043B\u0430
+          \u043D\u0430 \u0441\u0442\u0443\u043B\u0435 \u0438 \u0441\u0436\u0438\u043C\u0430\u043B\u0430
+          \u0440\u0443\u043A\u0443 \u043F\u0430\u043F\u044B \u0438 \u0440\u044B\u0434\u0430\u043B\u0430.
+          \u042F \u043E\u0431\u043D\u044F\u043B\u0430 \u0435\u0451 \u0442\u0430\u043A
+          \u043A\u0440\u0435\u043F\u043A\u043E, \u0441\u043B\u043E\u0432\u043D\u043E
+          \u043F\u044B\u0442\u0430\u043B\u0430\u0441\u044C \u0437\u0430\u0449\u0438\u0442\u0438\u0442\u044C
+          \u043E\u0442 \u0431\u043E\u043B\u0438 \u0438 \u0441\u0442\u0440\u0430\u0445\u0430.
+          \u0420\u043E\u0434\u0438\u0442\u0435\u043B\u0438 \u043E\u0431\u043D\u044F\u043B\u0438
+          \u043C\u0435\u043D\u044F \u0432 \u043E\u0442\u0432\u0435\u0442, \u0438
+          \u0432 \u044D\u0442\u043E\u043C \u043E\u0431\u044A\u044F\u0442\u0438\u0438
+          \u0431\u044B\u043B\u043E \u0441\u0442\u043E\u043B\u044C\u043A\u043E \u0433\u043E\u0440\u044F
+          \u0438 \u043B\u044E\u0431\u0432\u0438, \u0447\u0442\u043E \u043C\u043D\u0435
+          \u0441\u0442\u0430\u043B\u043E \u0441\u0442\u0440\u0430\u0448\u043D\u043E."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: I rushed to my mom, who was sitting on a chair and clutching Dad's
+          hand and sobbing. I hugged her so tightly, as if trying to protect her
+          from pain and fear. My parents hugged me back, and there was so much grief
+          and love in that hug that I was scared.
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -10961,11 +11061,43 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041C\u043D\u0435 \u0443\u0436\u0435 \u0438\u0441\u043F\u043E\u043B\u043D\u0438\u043B\u043E\u0441\u044C
+          6 \u043B\u0435\u0442. \u042D\u0442\u043E \u0431\u044B\u043B \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u044B\u0439
+          \u043B\u0435\u0442\u043D\u0438\u0439 \u0434\u0435\u043D\u044C, \u043A\u043E\u0433\u0434\u0430
+          \u043C\u0430\u043C\u0430 \u0432\u043F\u0435\u0440\u0432\u044B\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0438\u043B\u0430
+          \u043D\u0430\u043C \u0441\u044A\u0435\u0437\u0434\u0438\u0442\u044C \u0432
+          \u043F\u0430\u043B\u0430\u0442\u043E\u0447\u043D\u044B\u0439 \u0432\u044B\u0435\u0437\u0434
+          \u0432 \u043B\u0435\u0441. \u041C\u043E\u0435\u043C\u0443 \u0441\u0447\u0430\u0441\u0442\u044C\u044E
+          \u043D\u0435 \u0431\u044B\u043B\u043E \u043F\u0440\u0435\u0434\u0435\u043B\u0430!
+          \u042F \u0441\u0440\u0430\u0437\u0443 \u0436\u0435 \u0443\u0433\u043E\u0432\u043E\u0440\u0438\u043B\u0430
+          \u0440\u043E\u0434\u0438\u0442\u0435\u043B\u0435\u0439 \u043F\u043E\u0435\u0445\u0430\u0442\u044C
+          \u043F\u0440\u044F\u043C\u043E \u0441\u0435\u0433\u043E\u0434\u043D\u044F!\n\n\u042F
+          \u043F\u043E\u043C\u043E\u0433\u0430\u043B\u0430 \u043C\u0430\u043C\u0435
+          \u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C \u0437\u0430\u043A\u0443\u0441\u043A\u0438
+          \u0438 \u043D\u0430\u043F\u0438\u0442\u043A\u0438, \u0430 \u0437\u0430\u0442\u0435\u043C
+          \u043C\u044B \u0441\u043E\u0431\u0440\u0430\u043B\u0438 \u0432\u0441\u0451
+          \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E\u0435 \u0434\u043B\u044F
+          \u043F\u043E\u0435\u0437\u0434\u043A\u0438 - \u043F\u0430\u043B\u0430\u0442\u043A\u0443,
+          \u0441\u043F\u0430\u043B\u044C\u043D\u044B\u0435 \u043C\u0435\u0448\u043A\u0438,
+          \u0435\u0434\u0443, \u0438\u0433\u0440\u0443\u0448\u043A\u0438 \u0438 \u0434\u0440\u0443\u0433\u0438\u0435
+          \u043F\u0440\u0438\u043D\u0430\u0434\u043B\u0435\u0436\u043D\u043E\u0441\u0442\u0438,
+          \u0430 \u0442\u0430\u043A\u0436\u0435 \u043F\u043E\u043C\u043E\u0433\u0430\u043B\u0430
+          \u0443\u043F\u0430\u043A\u043E\u0432\u0430\u0442\u044C \u0432\u0441\u0435
+          \u0432 \u043C\u0430\u0448\u0438\u043D\u0443, \u043D\u0435 \u0442\u0435\u0440\u044F\u044F
+          \u0440\u0430\u0434\u043E\u0441\u0442\u043D\u043E\u0433\u043E \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u044F."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: 'I have already turned 6 years old. It was a sunny summer day when
+          my mother first suggested that we go on a camping trip to the forest. There
+          was no limit to my happiness! I immediately persuaded my parents to go
+          today!
+
+
+          I helped my mom prepare snacks and drinks, and then
+          we packed everything we needed for the trip - a tent, sleeping bags, food,
+          toys and other supplies, and I also helped pack everything into the car
+          without losing my joyful mood.'
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -11032,11 +11164,16 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u042F \u0431\u044B\u043B\u0430 \u0432 \u0432\u043E\u0441\u0442\u043E\u0440\u0433\u0435
+          \u043E\u0442 \u043F\u0440\u0435\u0434\u0441\u0442\u043E\u044F\u0449\u0435\u0433\u043E
+          \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F \u0438
+          \u0441 \u043D\u0435\u0442\u0435\u0440\u043F\u0435\u043D\u0438\u0435\u043C
+          \u0436\u0434\u0430\u043B\u0430 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: I was excited about the upcoming adventure and was looking forward
+          to the departure.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -11113,11 +11250,33 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041D\u0430\u043A\u043E\u043D\u0435\u0446 \u043C\u044B \u0432\u044B\u0431\u0440\u0430\u043B\u0438
+          \u0438\u0434\u0435\u0430\u043B\u044C\u043D\u043E\u0435 \u043C\u0435\u0441\u0442\u043E
+          \u0438 \u0440\u0430\u0437\u0431\u0438\u043B\u0438 \u043F\u0430\u043B\u0430\u0442\u043A\u0443.
+          \u041C\u0430\u043C\u0430 \u0443\u0447\u0438\u043B\u0430 \u043C\u0435\u043D\u044F
+          \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E \u0437\u0430\u043A\u0440\u0435\u043F\u043B\u044F\u0442\u044C
+          \u0432\u0435\u0440\u0435\u0432\u043A\u0438 \u0438 \u0440\u0430\u0441\u043A\u043B\u0430\u0434\u044B\u0432\u0430\u0442\u044C
+          \u0441\u043F\u0430\u043B\u044C\u043D\u044B\u0435 \u043C\u0435\u0448\u043A\u0438,
+          \u043F\u043E\u043A\u0430 \u043F\u0430\u043F\u0430 \u0440\u0430\u0437\u0432\u043E\u0434\u0438\u043B
+          \u043E\u0433\u043E\u043D\u044C. \u0417\u0430\u0442\u0435\u043C \u043C\u044B
+          \u0441\u0435\u043B\u0438 \u0443 \u043A\u043E\u0441\u0442\u0440\u0430, \u0447\u0442\u043E\u0431\u044B
+          \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u044C \u043E\u0431\u0435\u0434.
+          \u041C\u0430\u043C\u0430 \u0436\u0430\u0440\u0438\u043B\u0430 \u043C\u043D\u0435
+          \u043C\u043E\u044E \u043B\u044E\u0431\u0438\u043C\u0443\u044E \u044F\u0438\u0447\u043D\u0438\u0446\u0443
+          \u0441 \u0431\u043E\u0431\u0430\u043C\u0438, \u0430 \u043F\u0430\u043F\u0430
+          \u0432\u0441\u0451 \u043D\u0435\u0433\u043E\u0434\u043E\u0432\u0430\u043B:
+          \u043A\u0430\u043A \u043A\u043E\u043C\u0443-\u0442\u043E \u043C\u043E\u0433\u0443\u0442
+          \u043D\u0440\u0430\u0432\u0438\u0442\u044C\u0441\u044F \u0431\u043E\u0431\u044B,
+          \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043E\u043D \u043D\u0438\u043A\u043E\u0433\u0434\u0430
+          \u043D\u0435 \u043B\u044E\u0431\u0438\u043B?"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: 'Finally, we chose the perfect place and pitched a tent. Mom taught
+          me how to properly fasten ropes and lay out sleeping bags while Dad built
+          a fire. Then we sat around the campfire to cook dinner. Mom fried me my
+          favorite scrambled eggs with beans, and dad was still indignant: How can
+          anyone like beans that they''ve never liked?'
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -11192,11 +11351,19 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0421 \u043A\u0430\u0436\u0434\u044B\u043C \u043D\u043E\u0432\u044B\u043C
+          \u0444\u0430\u043A\u0442\u043E\u043C \u044F \u0432\u0441\u0435 \u0431\u043E\u043B\u044C\u0448\u0435
+          \u0443\u0432\u043B\u0435\u043A\u0430\u043B\u0430\u0441\u044C \u0435\u043D\u043E\u0442\u0430\u043C\u0438.
+          \u042F \u043D\u0430\u0447\u0430\u043B\u0430 \u0440\u0438\u0441\u043E\u0432\u0430\u0442\u044C
+          \u043A\u0430\u0440\u0442\u0438\u043D\u043A\u0438 \u0441 \u0435\u043D\u043E\u0442\u0430\u043C\u0438,
+          \u0430 \u0440\u043E\u0434\u0438\u0442\u0435\u043B\u0438 \u0447\u0438\u0442\u0430\u043B\u0438
+          \u043C\u043D\u0435 \u043A\u043D\u0438\u0433\u0438 \u043F\u0440\u043E \u043D\u0438\u0445."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: With each new fact, I became more and more interested in raccoons.
+          I started drawing pictures of raccoons, and my parents read me books about
+          them.
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -11271,11 +11438,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0410 \u0437\u0440\u044F!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: He missed a lot!
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -11345,11 +11512,24 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041A\u043E\u0433\u0434\u0430 \u044F\u0438\u0447\u043D\u0438\u0446\u0430
+          \u0443\u0436\u0435 \u0431\u044B\u043B\u0430 \u0433\u043E\u0442\u043E\u0432\u0430,
+          \u044F \u043F\u043E\u0434\u043E\u0448\u043B\u0430 \u043A \u043C\u0430\u043C\u0435
+          \u0438 \u043A\u0440\u0435\u043F\u043A\u043E \u043E\u0431\u043D\u044F\u043B\u0430
+          \u0435\u0451, \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u044F, \u043A\u0430\u043A
+          \u0441\u0435\u0440\u0434\u0446\u0435 \u043D\u0430\u043F\u043E\u043B\u043D\u044F\u0435\u0442\u0441\u044F
+          \u0440\u0430\u0434\u043E\u0441\u0442\u044C\u044E \u0438 \u043B\u044E\u0431\u043E\u0432\u044C\u044E.
+          \u041F\u043E\u0446\u0435\u043B\u0443\u0439 \u0432 \u0449\u0435\u043A\u0443
+          \u043C\u0430\u043C\u044B \u0431\u044B\u043B \u043C\u043E\u0438\u043C \u0441\u043B\u043E\u0432\u043E\u043C
+          \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u043D\u043E\u0441\u0442\u0438
+          \u0437\u0430 \u0432\u0441\u0451, \u0447\u0442\u043E \u043E\u043D\u0430
+          \u0434\u0435\u043B\u0430\u0435\u0442 \u0434\u043B\u044F \u043C\u0435\u043D\u044F."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: When the scrambled eggs were ready, I went up to my mother and hugged
+          her tightly, feeling my heart fill with joy and love. A kiss on Mom's cheek
+          was my word of thanks for everything she does for me.
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -11416,11 +11596,16 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u042D\u0442\u043E\u0442 \u043C\u043E\u043C\u0435\u043D\u0442 \u0441\u0442\u0430\u043B
+          \u043E\u0441\u043E\u0431\u0435\u043D\u043D\u044B\u043C \u0434\u043B\u044F
+          \u043D\u0430\u0441 \u043E\u0431\u0435\u0438\u0445 - \u043C\u043E\u043C\u0435\u043D\u0442\u043E\u043C
+          \u0438\u0441\u043A\u0440\u0435\u043D\u043D\u0435\u0439 \u043B\u044E\u0431\u0432\u0438
+          \u0438 \u0432\u0437\u0430\u0438\u043C\u043E\u043F\u043E\u043D\u0438\u043C\u0430\u043D\u0438\u044F."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: This moment was special for both of us - a moment of sincere love
+          and mutual understanding.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -11480,11 +11665,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041D\u0443 \u0438 \u043B\u0430\u0434\u043D\u043E, \u0437\u0430\u0442\u043E
+          \u043C\u043D\u0435 \u0431\u043E\u043B\u044C\u0448\u0435 \u0434\u043E\u0441\u0442\u0430\u0432\u0430\u043B\u043E\u0441\u044C."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: Well, okay, at least I got more.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -11545,11 +11731,13 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0412\u043E\u0442 \u0431\u044B \u044D\u0442\u043E\u0442 \u0435\u043D\u043E\u0442
+          \u043F\u0440\u0438\u0445\u043E\u0434\u0438\u043B \u043A \u043D\u0430\u043C
+          \u043F\u043E\u0447\u0430\u0449\u0435!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: I wish this raccoon would come to us more often!
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -11609,11 +11797,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041A\u0430\u043A \u0431\u044B\u043B\u043E \u0431\u044B \u043A\u043B\u0430\u0441\u0441\u043D\u043E
+          \u0431\u044B\u0442\u044C \u0435\u043D\u043E\u0442\u043E\u043C!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: How cool it would be to be a raccoon!
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -11676,11 +11865,16 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u042F \u0440\u0435\u0448\u0438\u043B\u0430 \u0446\u0435\u043D\u0438\u0442\u044C
+          \u043A\u0430\u0436\u0434\u044B\u0439 \u043C\u043E\u043C\u0435\u043D\u0442,
+          \u043F\u0440\u043E\u0432\u0435\u0434\u0435\u043D\u043D\u044B\u0439 \u0441
+          \u043C\u0430\u043C\u043E\u0439, \u043F\u043E\u043A\u0430 \u043E\u043D\u0430
+          \u0435\u0449\u0451 \u0441 \u043D\u0430\u043C\u0438."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: I decided to appreciate every moment I spent with my mom while she
+          was still with us.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -11741,11 +11935,13 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u042F \u0432\u0435\u0440\u0438\u043B\u0430, \u0447\u0442\u043E \u043C\u0430\u043C\u0430
+          \u043D\u0438\u043A\u043E\u0433\u0434\u0430 \u043D\u0435 \u043E\u0441\u0442\u0430\u0432\u0438\u0442
+          \u043D\u0430\u0441 \u0441 \u043F\u0430\u043F\u043E\u0439."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: I believed that Mom would never leave Dad and me.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -11769,7 +11965,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 96.59206
+        x: 91.90456
         y: 1280.085
         width: 160
         height: 30
@@ -11821,11 +12017,32 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0412 12 \u043B\u0435\u0442 \u044F \u043F\u043E\u0442\u0435\u0440\u044F\u043B\u0430
+          \u0441\u0432\u043E\u044E \u043C\u0430\u043C\u0443. \u042D\u0442\u043E \u0431\u044B\u043B
+          \u0441\u0430\u043C\u044B\u0439 \u0442\u044F\u0436\u0435\u043B\u044B\u0439
+          \u043F\u0435\u0440\u0438\u043E\u0434 \u0432 \u043C\u043E\u0435\u0439 \u0436\u0438\u0437\u043D\u0438,
+          \u0438 \u0441\u043B\u0435\u0437\u044B \u0441\u0442\u0435\u043A\u0430\u043B\u0438
+          \u043F\u043E \u043C\u043E\u0438\u043C \u0449\u0435\u043A\u0430\u043C \u043A\u0430\u0436\u0434\u044B\u0439
+          \u0434\u0435\u043D\u044C. \u041D\u043E \u043F\u0430\u043F\u0430 \u0432\u0441\u0435\u0433\u0434\u0430
+          \u0431\u044B\u043B \u0440\u044F\u0434\u043E\u043C, \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044F
+          \u043C\u0435\u043D\u044F \u0438 \u043F\u043E\u043C\u043E\u0433\u0430\u044F
+          \u043F\u0435\u0440\u0435\u0436\u0438\u0442\u044C \u044D\u0442\u0443 \u0443\u0442\u0440\u0430\u0442\u0443.
+          \u041C\u044B \u043F\u0440\u043E\u0432\u043E\u0434\u0438\u043B\u0438 \u043C\u043D\u043E\u0433\u043E
+          \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u0432\u043C\u0435\u0441\u0442\u0435,
+          \u0433\u0443\u043B\u044F\u044F \u043F\u043E \u043F\u0430\u0440\u043A\u0443
+          \u0438\u043B\u0438 \u043F\u0440\u043E\u0441\u0442\u043E \u0441\u0438\u0434\u044F
+          \u043D\u0430 \u0432\u0435\u0440\u0430\u043D\u0434\u0435 \u0438 \u0440\u0430\u0437\u0433\u043E\u0432\u0430\u0440\u0438\u0432\u0430\u044F
+          \u043E \u043C\u0430\u043C\u0435, \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u044F,
+          \u043A\u0430\u043A \u043C\u044B \u043F\u0440\u043E\u0432\u043E\u0434\u0438\u043B\u0438
+          \u0432\u0440\u0435\u043C\u044F \u0432\u0441\u0435 \u0432\u043C\u0435\u0441\u0442\u0435."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: At the age of 12, I lost my mother. It was the hardest period of my
+          life, and tears were running down my cheeks every day. But Dad was always
+          there for me, supporting me and helping me through this loss. We spent
+          a lot of time together, walking in the park or just sitting on the veranda
+          and talking about mom, remembering how we all spent time together.
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -11893,11 +12110,16 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041C\u043D\u0435 \u0431\u044B\u043B\u043E \u0431\u043E\u043B\u044C\u043D\u043E,
+          \u043D\u043E \u044F \u0431\u044B\u043B\u0430 \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u043D\u0430,
+          \u0447\u0442\u043E \u0443 \u043C\u0435\u043D\u044F \u0435\u0441\u0442\u044C
+          \u043F\u0430\u043F\u0430. \u041E\u043D \u0441\u0442\u0430\u043B \u043C\u043E\u0435\u0439
+          \u0435\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0439
+          \u043E\u043F\u043E\u0440\u043E\u0439."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: It hurt, but I was grateful that I had a dad. He became my only support.
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -11978,11 +12200,33 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041D\u0435\u0434\u0430\u0432\u043D\u043E \u043C\u043D\u0435 \u0438\u0441\u043F\u043E\u043B\u043D\u0438\u043B\u043E\u0441\u044C
+          13 \u043B\u0435\u0442. \u041F\u0430\u043F\u0430 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0438\u043B
+          \u0441\u043D\u043E\u0432\u0430 \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C\u0441\u044F
+          \u0432 \u043F\u0430\u043B\u0430\u0442\u043E\u0447\u043D\u044B\u0439 \u0432\u044B\u0435\u0437\u0434
+          - \u043C\u0435\u0441\u0442\u043E, \u0433\u0434\u0435 \u043C\u044B \u043F\u0440\u043E\u0432\u043E\u0434\u0438\u043B\u0438
+          \u0441\u0447\u0430\u0441\u0442\u043B\u0438\u0432\u043E\u0435 \u0432\u0440\u0435\u043C\u044F
+          \u0432\u0442\u0440\u043E\u0435\u043C \u0441 \u043C\u0430\u043C\u043E\u0439.
+          \u042F \u0441\u043E\u0433\u043B\u0430\u0441\u0438\u043B\u0430\u0441\u044C,
+          \u0441 \u0440\u0430\u0434\u043E\u0441\u0442\u044C\u044E \u0432\u0441\u043F\u043E\u043C\u0438\u043D\u0430\u044F
+          \u0437\u0430\u043F\u0430\u0445 \u043A\u043E\u0441\u0442\u0440\u0430 \u0438
+          \u0442\u043E\u0433\u043E \u043C\u0438\u043B\u043E\u0433\u043E \u0435\u043D\u043E\u0442\u0430,
+          \u043F\u043E\u0445\u043E\u0436\u0435\u0433\u043E \u043D\u0430 \u043A\u043E\u0442\u0430.
+          \u0412 \u044D\u0442\u043E\u0442 \u043C\u043E\u043C\u0435\u043D\u0442 \u044F
+          \u043F\u043E\u0447\u0443\u0432\u0441\u0442\u0432\u043E\u0432\u0430\u043B\u0430
+          \u0442\u0435\u043F\u043B\u043E \u0438 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u043A\u0443
+          \u043F\u0430\u043F\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043E\u043A\u0440\u0443\u0436\u0430\u043B\u0438
+          \u043C\u0435\u043D\u044F, \u043A\u0430\u043A \u043D\u0435\u0432\u0438\u0434\u0438\u043C\u044B\u0439
+          \u043F\u043B\u0430\u0449 \u043D\u0430\u0434\u0435\u0436\u0434\u044B \u0438
+          \u043B\u044E\u0431\u0432\u0438."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: I recently turned 13 years old. Dad suggested that we go to the campsite
+          again - the place where the three of us spent happy time with Mom. I agreed,
+          happily remembering the smell of the campfire and that cute raccoon that
+          looked like a cat. At that moment, I felt the warmth and support of my
+          dad, who surrounded me like an invisible cloak of hope and love.
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -12046,11 +12290,12 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0427\u0442\u043E \u0436, \u043F\u043E\u0439\u0434\u0443 \u0441\u043E\u0431\u0438\u0440\u0430\u0442\u044C
+          \u0432\u0435\u0449\u0438!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: Well, I'm going to pack my things!
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -12111,7 +12356,7 @@ MonoBehaviour:
           \u043C\u0435\u0441\u0442\u043E \u0434\u043B\u044F \u0440\u0430\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
           \u043B\u0430\u0433\u0435\u0440\u044F, \u0430 \u0437\u0430\u043E\u0434\u043D\u043E
           \u0438 \u043D\u0430\u0441\u043B\u0430\u0434\u0438\u0442\u044C\u0441\u044F
-          \u043A\u0440\u0430\u0441\u043E\u0442\u043E\u0439 \u043F\u0440\u0438\u0440\u043E\u0434\u044B.\n"
+          \u043A\u0440\u0430\u0441\u043E\u0442\u043E\u0439 \u043F\u0440\u0438\u0440\u043E\u0434\u044B."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -12119,11 +12364,26 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041F\u043E \u0434\u043E\u0440\u043E\u0433\u0435 \u0432 \u043B\u0435\u0441
+          \u043C\u044B \u043F\u0435\u043B\u0438 \u043F\u0435\u0441\u043D\u0438, \u0438\u0433\u0440\u0430\u043B\u0438
+          \u0432 \"\u0441\u043B\u043E\u0432\u0430\", \u0448\u0443\u0442\u0438\u043B\u0438
+          \u0438 \u0441\u043C\u0435\u044F\u043B\u0438\u0441\u044C. \u041C\u0430\u043C\u0430
+          \u0441 \u043F\u0430\u043F\u043E\u0439 \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u043B\u0438
+          \u043C\u043D\u0435 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0435
+          \u0438\u0441\u0442\u043E\u0440\u0438\u0438, \u0434\u0435\u043B\u0430\u043B\u0438
+          \u043E\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0438, \u0447\u0442\u043E\u0431\u044B
+          \u043D\u0430\u0439\u0442\u0438 \u0438\u0434\u0435\u0430\u043B\u044C\u043D\u043E\u0435
+          \u043C\u0435\u0441\u0442\u043E \u0434\u043B\u044F \u0440\u0430\u0437\u0432\u0435\u0434\u0435\u043D\u0438\u044F
+          \u043B\u0430\u0433\u0435\u0440\u044F, \u0430 \u0437\u0430\u043E\u0434\u043D\u043E
+          \u0438 \u043D\u0430\u0441\u043B\u0430\u0434\u0438\u0442\u044C\u0441\u044F
+          \u043A\u0440\u0430\u0441\u043E\u0442\u043E\u0439 \u043F\u0440\u0438\u0440\u043E\u0434\u044B."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: On the way to the forest, we sang songs, played "words", joked and
+          laughed. Mom and dad told me interesting stories, made stops to find the
+          perfect place to set up camp, and at the same time enjoed the beauty of
+          nature.
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -12202,11 +12462,31 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\"\u042F \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F,
+          \u043C\u0430\u043C! \u0422\u0430\u043A \u043A\u043B\u0430\u0441\u0441\u043D\u043E,
+          \u0447\u0442\u043E \u0442\u044B \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0438\u043B\u0430
+          \u043D\u0430\u043C \u0441\u044E\u0434\u0430 \u043F\u0440\u0438\u0435\u0445\u0430\u0442\u044C!\"
+          - \u043F\u0440\u043E\u043A\u0440\u0438\u0447\u0430\u043B\u0430 \u044F \u0441
+          \u0440\u0430\u0434\u043E\u0441\u0442\u044C\u044E. \u041C\u0430\u043C\u0430
+          \u0443\u043B\u044B\u0431\u043D\u0443\u043B\u0430\u0441\u044C, \u043F\u043E\u0446\u0435\u043B\u043E\u0432\u0430\u043B\u0430
+          \u043C\u0435\u043D\u044F \u0432 \u043B\u043E\u0431\u0438\u043A \u0438 \u043F\u043E\u0433\u043B\u0430\u0434\u0438\u043B\u0430
+          \u043F\u043E \u0433\u043E\u043B\u043E\u0432\u0435. \"\u0418 \u044F \u043E\u0447\u0435\u043D\u044C
+          \u043B\u044E\u0431\u043B\u044E \u0442\u0435\u0431\u044F, \u043C\u0438\u043B\u0430\u044F.
+          \u0411\u0443\u0434\u0435\u043C \u043F\u0440\u0438\u0435\u0437\u0436\u0430\u0442\u044C
+          \u0441\u044E\u0434\u0430 \u043A\u0430\u0436\u0434\u043E\u0435 \u043B\u0435\u0442\u043E,
+          \u0441\u043E\u0433\u043B\u0430\u0441\u043D\u0430?\" - \u043E\u0442\u0432\u0435\u0442\u0438\u043B\u0430
+          \u043C\u0430\u043C\u0430. \u042F \u0432\u0438\u0434\u0435\u043B\u0430 \u043A\u0430\u043A
+          \u0435\u0451 \u0441\u0435\u0440\u0434\u0446\u0435 \u043D\u0430\u043F\u043E\u043B\u043D\u044F\u043B\u043E\u0441\u044C
+          \u0433\u043E\u0440\u0434\u043E\u0441\u0442\u044C\u044E \u0438 \u0440\u0430\u0434\u043E\u0441\u0442\u044C\u044E
+          \u043E\u0442 \u043B\u044E\u0431\u0432\u0438 \u043A\u043E \u043C\u043D\u0435."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '"I love you, Mom! It''s so cool that you invited us to come here!" 
+          I shouted with joy. Mom smiled, kissed me on the forehead and stroked my
+          head. "I love you very much too, honey. Will we come here every summer
+          if you want?"  Mom replied. I saw how her heart was filled with pride and
+          joy from loving me.'
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -12291,11 +12571,42 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041D\u0430\u0441\u0442\u0443\u043F\u0438\u043B \u0432\u0435\u0447\u0435\u0440.
+          \u041C\u044B \u0441 \u0440\u043E\u0434\u0438\u0442\u0435\u043B\u044F\u043C\u0438
+          \u0436\u0430\u0440\u0438\u043B\u0438 \u043C\u0430\u0440\u0448\u043C\u0435\u043B\u043B\u043E\u0443,
+          \u043A\u0430\u043A \u0432\u0434\u0440\u0443\u0433 \u044F \u0443\u0432\u0438\u0434\u0435\u043B\u0430
+          \u043D\u0435\u0437\u043D\u0430\u043A\u043E\u043C\u043E\u0435 \u043C\u043D\u0435
+          \u0436\u0438\u0432\u043E\u0442\u043D\u043E\u0435, \u043F\u043E\u0445\u043E\u0436\u0435\u0435
+          \u043D\u0430 \u043A\u043E\u0442\u0430. \u0415\u0433\u043E \u043F\u0443\u0448\u0438\u0441\u0442\u0430\u044F
+          \u0448\u0435\u0440\u0441\u0442\u044C \u0438 \u043E\u0437\u043E\u0440\u043D\u043E\u0439
+          \u0432\u0437\u0433\u043B\u044F\u0434 \u0441\u0440\u0430\u0437\u0443 \u043F\u043E\u043D\u0440\u0430\u0432\u0438\u043B\u0438\u0441\u044C
+          \u043C\u043D\u0435.\n\n\u0420\u043E\u0434\u0438\u0442\u0435\u043B\u0438
+          \u0441\u043A\u0430\u0437\u0430\u043B\u0438, \u0447\u0442\u043E \u044D\u0442\u043E
+          \u043D\u0435 \u043A\u043E\u0442, \u0430 \u0435\u043D\u043E\u0442. \u041E\u043D\u0438
+          \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u043B\u0438 \u043C\u043D\u0435
+          \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0435 \u0444\u0430\u043A\u0442\u044B
+          \u043E \u0435\u043D\u043E\u0442\u0430\u0445. \u042F \u0443\u0437\u043D\u0430\u043B\u0430,
+          \u0447\u0442\u043E \u043E\u043D\u0438 \u043E\u0447\u0435\u043D\u044C \u0443\u043C\u043D\u044B\u0435
+          \u0438 \u043B\u043E\u0432\u043A\u0438\u0435 \u0436\u0438\u0432\u043E\u0442\u043D\u044B\u0435,
+          \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043C\u043E\u0433\u0443\u0442
+          \u0436\u0438\u0442\u044C \u043A\u0430\u043A \u0432 \u043B\u0435\u0441\u0443,
+          \u0442\u0430\u043A \u0438 \u0433\u043E\u0440\u043E\u0434\u0430\u0445, \u0430
+          \u0435\u0449\u0451 \u043E\u043D\u0438 \u043B\u044E\u0431\u044F\u0442 \u0438\u0433\u0440\u0430\u0442\u044C
+          \u0438 \u0438\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u044C
+          \u043E\u043A\u0440\u0443\u0436\u0430\u044E\u0449\u0438\u0439 \u043C\u0438\u0440!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: 'Evening came. My parents and I were frying marshmallows when suddenly
+          I saw an animal that looked like a cat that I didn''t recognize. His fluffy
+          fur and mischievous look immediately appealed to me.
+
+
+          Parents
+          said that it was not a cat, but a raccoon. They told me interesting facts
+          about raccoons. I found out that they are very smart and agile animals
+          that can live both in the forest and in cities, and they also love to play
+          and explore the world around them!'
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -12367,11 +12678,22 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u042F \u043D\u0435 \u043C\u043E\u0433\u043B\u0430 \u0443\u0441\u043D\u0443\u0442\u044C
+          \u0438\u0437-\u0437\u0430 \u043D\u0430\u0441\u044B\u0449\u0435\u043D\u043D\u043E\u0441\u0442\u0438
+          \u0434\u043D\u044F \u0438 \u0432\u044B\u0448\u043B\u0430 \u0438\u0437 \u043A\u043E\u043C\u043D\u0430\u0442\u044B,
+          \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u043F\u0440\u043E\u0441\u0438\u0442\u044C
+          \u043F\u0430\u043F\u0443 \u0441\u043D\u043E\u0432\u0430 \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u0430\u0442\u044C
+          \u043C\u043D\u0435 \u0441\u043A\u0430\u0437\u043A\u0443 \u043F\u0440\u043E
+          \u0435\u043D\u043E\u0442\u0430. \u041F\u0440\u0438\u043E\u0442\u043A\u0440\u044B\u0432
+          \u0434\u0432\u0435\u0440\u044C, \u044F \u0443\u0432\u0438\u0434\u0435\u043B\u0430
+          \u043F\u0440\u0438\u0433\u043B\u0443\u0448\u0435\u043D\u043D\u044B\u0439
+          \u0441\u0432\u0435\u0442 \u0438\u0437 \u043A\u0443\u0445\u043D\u0438."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: I couldn't sleep because of the intensity of the day and left the
+          room to ask Dad to tell me the raccoon story again. Opening the door a
+          crack, I saw a dim light from the kitchen.
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -12445,11 +12767,25 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u042F \u0443\u0441\u043B\u044B\u0448\u0430\u043B\u0430 \u0433\u043E\u043B\u043E\u0441
+          \u043C\u0430\u043C\u044B - \u0442\u0438\u0445\u0438\u0439, \u043F\u0435\u0447\u0430\u043B\u044C\u043D\u044B\u0439,
+          \u043D\u043E \u043F\u0440\u043E\u043D\u0437\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0439:
+          \"\u0423 \u043C\u0435\u043D\u044F \u0440\u0430\u043A\", - \u043F\u0440\u043E\u0437\u0432\u0443\u0447\u0430\u043B\u043E
+          \u044D\u0442\u043E \u0441\u043B\u043E\u0432\u043E \u043A\u0430\u043A \u0433\u0440\u043E\u043C
+          \u0441\u0440\u0435\u0434\u0438 \u0431\u0435\u0437\u043C\u043E\u043B\u0432\u0438\u044F.
+          \u042F \u0437\u0430\u043C\u0435\u0440\u043B\u0430 \u043D\u0430 \u043C\u0435\u0441\u0442\u0435,
+          \u0441\u043B\u043E\u0432\u043D\u043E \u043E\u0431\u043C\u043E\u0440\u043E\u043A
+          \u043D\u0435 \u0434\u0430\u0432\u0430\u043B \u0434\u0432\u0438\u0433\u0430\u0442\u044C\u0441\u044F.
+          \u0421\u043B\u0451\u0437\u044B \u043D\u0430\u043F\u043E\u043B\u043D\u0438\u043B\u0438
+          \u043C\u043E\u0438 \u0433\u043B\u0430\u0437\u0430, \u0438 \u0441\u0435\u0440\u0434\u0446\u0435
+          \u0441\u0436\u0430\u043B\u043E\u0441\u044C \u043E\u0442 \u0431\u043E\u043B\u0438."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: 'I heard my mother''s voice-quiet, sad, but shrill: "I have cancer,"
+          this word sounded like a thunderclap in the silence. I froze in place,
+          as if fainting prevented me from moving. Tears filled my eyes and my heart
+          ached.'
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -12512,11 +12848,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0427\u0442\u043E \u0436..."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: So..
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -12581,11 +12917,13 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u041C\u0435\u043D\u044F \u0440\u0430\u0434\u0443\u0435\u0442, \u0447\u0442\u043E
+          \u0440\u043E\u0434\u0438\u0442\u0435\u043B\u0438 \u043F\u043E\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u044E\u0442
+          \u043C\u043E\u0451 \u043D\u043E\u0432\u043E\u0435 \u0443\u0432\u043B\u0435\u0447\u0435\u043D\u0438\u0435!"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: I am glad that my parents support my new hobby!
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 6
@@ -12678,8 +13016,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 359.18338, y: 1240.8152}
-    canvasZoom: 0.49000046
+    canvasScrollPosition: {x: 143.74988, y: 1508.4818}
+    canvasZoom: 0.64000034
   - id: 7
     fields:
     - title: Title
@@ -14466,7 +14804,7 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: We don't have long to sleep, we'll be there soon, baby
+        value: There's not much time left for sleep, we'll be there soon, baby
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 8
@@ -14537,7 +14875,7 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: '- It''s good [To fall back to sleep]'
+        value: '- Good [Fall back to sleep]'
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -14608,7 +14946,7 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: Wake up, sleeping beauty, we've arrived
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -14671,11 +15009,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "- \u043C\u043C, \u0447\u0442\u043E? \u041F\u0430\u043F? "
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- Mm, what? Dad?'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 8
@@ -14746,7 +15084,8 @@ MonoBehaviour:
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: Ha ha, you sleepy little fool. This is Emma, your dad carried you
+          into our car while you were sleeping.
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 8
@@ -14805,11 +15144,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "- \u0427\u0442\u043E? \u0418 \u0433\u0434\u0435 \u043E\u043D?"
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- What? And where is he?'
         type: 4
         typeString: CustomFieldType_Localization
       conversationID: 8
@@ -14875,11 +15214,21 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: 
+        value: "\u0422\u0432\u043E\u0435\u0433\u043E \u043F\u0430\u043F\u0443 \u0441\u0440\u043E\u0447\u043D\u043E
+          \u0432\u044B\u0437\u0432\u0430\u043B\u0438 \u043D\u0430 \u0440\u0430\u0431\u043E\u0442\u0443,
+          \u0442\u0430\u043A \u0447\u0442\u043E\r \u043E\u043D \u0440\u0435\u0448\u0438\u043B,
+          \u0447\u0442\u043E \u0442\u044B \u043F\u043E\u0435\u0434\u0435\u0448\u044C
+          \u043D\u0430 \u043A\u0435\u043C\u043F\u0438\u043D\u0433 \u0441\u043E \u043C\u043D\u043E\u0439
+          \u0438 \u043C\u043E\u0438\u043C\u0438 \u0440\u043E\u0434\u0438\u0442\u0435\u043B\u044F\u043C\u0438.
+          \u0414\u0430\u0432\u0430\u0439 \u0443\u0436\u0435 \u0432\u044B\u0445\u043E\u0434\u0438
+          \u0438\u0437 \u043C\u0430\u0448\u0438\u043D\u044B.  "
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: 'Your dad was called to work urgently, so
+
+          he decided that
+          you would go camping with me and my parents. Come on, get out of the car.'
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -14909,73 +15258,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 67.14043
         y: 1010.07465
-        width: 160
-        height: 30
-    - id: 11
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 'SetContinueMode(false);
-
-          SetDialoguePanel(false);
-
-          Delay(10);
-
-          SetDialoguePanel(true);'
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: RU
-        value: 
-        type: 4
-        typeString: CustomFieldType_Localization
-      - title: EN
-        value: 
-        type: 4
-        typeString: CustomFieldType_Localization
-      - title: EventGuid
-        value: f0b6e61d-9d10-407d-8d19-00c26aeca3ab
-        type: 0
-        typeString: 
-      conversationID: 8
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 67.14043
-        y: 1105.9763
         width: 160
         height: 30
     - id: 12
@@ -15009,11 +15291,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: RU
-        value: "\u041B\u0430\u0434\u043D\u043E.."
+        value: "- \u041B\u0430\u0434\u043D\u043E.."
         type: 4
         typeString: CustomFieldType_Localization
       - title: EN
-        value: 
+        value: '- Okay..'
         type: 4
         typeString: CustomFieldType_Localization
       - title: EventGuid
@@ -15040,8 +15322,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.64000034
+    canvasScrollPosition: {x: 0, y: 350.3827}
+    canvasZoom: 0.49000046
   - id: 9
     fields:
     - title: Title

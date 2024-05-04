@@ -13,13 +13,14 @@ public class LanguageDropdown : MonoBehaviour
     private void Start()
     {
         // Подписываемся на событие изменения значения dropdown
+        languageDropdown = gameObject.GetComponent<Dropdown>();
         languageDropdown.onValueChanged.AddListener(OnLanguageChanged);
 
         // Устанавливаем текущий язык в dropdown
         SetCurrentLanguage();
     }
 
-    private void OnLanguageChanged(int index)
+    public void OnLanguageChanged(int index)
     {
         // Получаем выбранный язык из dropdown
         string selectedLanguage = GetLanguageFromIndex(index);
@@ -28,10 +29,10 @@ public class LanguageDropdown : MonoBehaviour
         DialogueManager.SetLanguage(selectedLanguage);
     }
 
-    private void SetCurrentLanguage()
+    public void SetCurrentLanguage()
     {
         // Устанавливаем текущий язык в dropdown
-        string currentLanguage = "Ru";//DialogueManager.GetCurrentLanguage();
+        string currentLanguage = "";//DialogueManager.GetCurrentLanguage();
         languageDropdown.value = GetIndexFromLanguage(currentLanguage);
     }
 
