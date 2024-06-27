@@ -39,14 +39,14 @@ public class LanguageDropdown : MonoBehaviour
     private string GetLanguageFromIndex(int index)
     {
         // Возвращаем язык из dropdown по индексу
-        string[] languages = { "Ru", "EN" };
+        string[] languages = { "RU", "EN" };
         return languages[index];
     }
 
     private int GetIndexFromLanguage(string language)
     {
         // Возвращаем индекс языка в dropdown
-        string[] languages = { "Ru", "EN" };
+        string[] languages = { "RU", "EN" };
         for (int i = 0; i < languages.Length; i++)
         {
             if (languages[i] == language)

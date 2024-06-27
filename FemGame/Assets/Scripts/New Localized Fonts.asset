@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0378145877c582d4d91b993a8608ca71, type: 3}
   m_Name: New Localized Fonts
   m_EditorClassIdentifier: 
-  defaultFont: {fileID: 12800000, guid: 818d9747d10bac24e91c14d810e56668, type: 3}
+  defaultFont: {fileID: 12800000, guid: 8b3c9b44498634a4d9d0816c83c70a7c, type: 3}
   defaultTextMeshProFont: {fileID: 0}
   fontsForLanguages: []
